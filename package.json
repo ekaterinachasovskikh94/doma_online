@@ -1,0 +1,43 @@
+{
+  "name": "doma_online",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "del": "^5.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "path": "^0.12.7",
+    "webpack": "^4.42.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "author": "ekaterinachasovskikh94",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekaterinachasovskikh94"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gh-pages": "^2.2.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "stylelint": "stylelint ./src/styles/**/*.scss --fix --syntax scss",
+    "start": "gulp",
+    "build": "npm start build"
+  },
+  "keywords": [],
+  "description": "Start project."
+}
