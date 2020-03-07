@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EAEC,oBAAa;EAAb,oBAAa;EAAb,aAAa;EACb,SAAS,EAAA","file":"style.css","sourcesContent":["li {\n\n\tdisplay: flex;\n\tmargin: 0;\n}"]}
