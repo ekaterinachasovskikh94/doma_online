@@ -1,0 +1,15 @@
+@mixin grid ($distance-column, $distance-row, $columns, $minWidth, $display) {
+    display: grid;
+    grid-column-gap: $distance-column;
+    grid-row-gap: $distance-row;
+    grid-template-columns: repeat(#{$columns}, minmax(#{$minWidth}, 1fr));
+
+    // @if $auto-columns == 0 {
+    //     grid-template-columns: repeat(auto-fill, 1fr);
+    // }
+
+    @if $display == 1 {
+        display: inline-grid;
+    }
+
+}

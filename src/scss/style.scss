@@ -1,5 +1,18 @@
-li {
+@charset "UTF-8";
 
-	display: flex;
-	margin: 0;
-}
+//utilities
+@import 'utilities/fonts';
+@import 'utilities/container';
+@import 'utilities/color';
+@import 'utilities/grid';
+
+//molecules
+@import 'molecules/burger';
+
+//organisms
+@import 'organisms/menu';
+@import 'organisms/header';
+
+
+//templates
+@import 'templates/header';

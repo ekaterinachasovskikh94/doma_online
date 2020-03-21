@@ -1,0 +1,66 @@
+.m-burger {
+  position: relative;
+  display: none;
+  margin: 50px auto;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  @media(max-width: 1097px) {
+    display: block;
+  }
+}
+
+.m-burger:before,
+.m-burger:after {
+  content: '';
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+    background-color: $main-color;
+}
+
+.m-burger:before {
+  top: 0;
+  left: 0;
+}
+
+.m-burger:after {
+  bottom: 0;
+  left: 0;
+}
+
+span:before,
+span:after {
+  content: '';
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 6px;
+  background-color: $main-color;
+}
+
+.m-burger:hover span:before{
+  transform: rotate(-135deg);
+}
+
+.m-burger:hover span:after{
+  transform: rotate(-45deg);
+}
+
+.m-burger:hover:before {
+  transform: translate(-100%);
+  opacity: 0;
+}
+
+.m-burger:hover:after {
+  transform: translate(100%);
+  opacity: 0;
+}
