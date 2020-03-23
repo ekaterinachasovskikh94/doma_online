@@ -70,8 +70,50 @@
     font-size: 1rem;
     line-height: 1;
 }
+@mixin font-text-height {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+@mixin font-text-medium {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1;
+}
 @mixin font-text-lato {
     font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1;
+}
+@mixin font-text-lato-small {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+@mixin font-button-lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1;
+}
+@mixin font-button-lato-big {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1;
+}
+@mixin font-button-lato-medium {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+@mixin font-button-lato-small {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
     font-size: 1rem;
     line-height: 1;
 }
@@ -79,5 +121,43 @@
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+    line-height: 1;
+}
+@mixin font-text-lato-bold-small {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1;
+}
+@mixin font-text-lato-bold-medium {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+@mixin font-text-lato-bold-big {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 1;
+}
+@mixin font-text-lato-bold-small {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+@mixin font-text-italic-big {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1;
+}
+@mixin font-text-italic-small {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
     line-height: 1;
 }

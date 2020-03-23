@@ -1,0 +1,93 @@
+.o-form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.o-form__button-holder {
+  display: flex;
+  justify-content: center;
+}
+.o-form__button {
+  @include button-main-medium;
+}
+  .o-form__label {
+    .o-form__group_checked & {
+    text-align: left;
+    margin-left: 32px;
+  }
+}
+ .o-form__group_checked {
+  margin-bottom: 40px;
+ }
+.o-form__label {
+  @include font-text-lato;
+  cursor: pointer;
+  padding-bottom: 12px;
+
+    &:last-child {
+    padding-bottom: 0;
+  }
+}
+.o-form__input {
+  padding: 14px;
+}
+input {
+  &.o-form__input {
+    border: 1px solid $main-color;
+    @include font-text-lato; 
+  }
+}
+// input:invalid{
+//   &.o-form__input {
+//     border: 1px solid $red;
+//   }
+// }
+
+input:valid {
+  &.o-form__input {
+    border: 1px solid $main-color;
+  }
+}
+input[type=tel] {
+     &.o-form__input {
+         
+     }
+ }
+input[type=checkbox] {
+     &.o-form__checkbox {
+         display: none;
+     }
+ }
+
+input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfo"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato-small;
+         &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    right: calc(34% - 4px);
+         }
+     }
+ }

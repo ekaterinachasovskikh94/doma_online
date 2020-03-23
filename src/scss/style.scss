@@ -5,14 +5,20 @@
 @import 'utilities/container';
 @import 'utilities/color';
 @import 'utilities/grid';
-
+@import 'utilities/icon';
+@import 'utilities/button';
 //molecules
 @import 'molecules/burger';
 
 //organisms
 @import 'organisms/menu';
 @import 'organisms/header';
-
+@import 'organisms/preview';
+@import 'organisms/tabs';
+@import 'organisms/form';
 
 //templates
 @import 'templates/header';
+@import 'templates/section';
+@import 'templates/preview';
+@import 'templates/tabs';

@@ -14,7 +14,8 @@
   <div class="o-header__logo">
     <img src="img/logo.png" alt="логотип" class="o-header__logo-img">
   </div>
-  <nav class="o-header__menu">
+  <div class="o-header__block j-mobile-nav">
+  <nav class="o-header__menu o-header__menu_hidden">
     <a href="" class="o-header__menu-item">Услуги</a>
     <a href="" class="o-header__menu-item">О компании</a>
     <a href="" class="o-header__menu-item">Стоимость</a>
@@ -24,12 +25,172 @@
   <div class="o-header__tel-holder">
     <a class="o-header__tel" href="tel:88005000000">8-800-500-00-00</a>
   </div>
-   <button class="m-burger">
+
+  </div>
+<!--            <button class="m-burger j-m-burger">
       <span>Открыть меню</span>
-  </button>
+      </button> -->
 </div>
-  
 </header>
-	<script src="build/js/script.js"></script>
+
+<section class="t-section">
+  <div class="t-preview">
+  <div class="t-preview__holder">
+    <div class="t-preview__holder-head">
+    <h1 class="t-preview__title">Семейная ипотека</h1>
+      <div class="t-preview__subtitle-holder">
+          <span class="t-preview__subtitle">ставки от</span>
+          <span class="t-preview__subtitle t-preview__subtitle_green">&ensp;5,5%</span>
+      </div>
+      </div>
+         <div class="t-preview__button-holder">
+    <span class="t-preview__button">Оформить заявку</span> 
+  </div>
+  </div> 
+  <div class="o-preview">
+    <div class="o-preview__holder">
+    <div class="o-preview__img-holder">
+      <img src="img/preview-banner.jpg" alt="баннер" class="o-preview__img">
+    </div>
+     <div class="o-preview__social">
+      <a href="" class="o-preview__social-item o-preview__social-item_vk"></a>
+      <a href="" class="o-preview__social-item o-preview__social-item_telegram"></a>
+      <a href="" class="o-preview__social-item o-preview__social-item_instagram"></a>
+      <a href="" class="o-preview__social-item o-preview__social-item_facebook"></a>
+     </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class="t-section">
+  <div class="t-tabs">
+    <div class="t-tabs__holder">
+    <div class="o-tab">
+      <input type="radio" name="info-tabs" id="tab-1" checked class="o-tab__switch">
+      <label for="tab-1" class="o-tab__title">Семейная ипотека</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+        <p class="o-tab__content-text">
+       В рамках программы «Семейная ипотека с государственной поддержкой» возможно взять кредит на покупку недвижимости или оформить рефинансирование ранее оформленной ипотеки по льготной ставке.</p>
+       <div class="o-tab__content-action o-tab__content-action_rose"></div>
+     </div>
+    <div class="o-tab__form">
+      <div class="o-tab__form-holder">
+        <div class="o-form__group">
+          <label class="o-form__label" for="name">ФИО</label>
+          <input class="o-form__input" type="name" id="dynamic-label-input" >
+        </div>
+        <div class="o-form__group">
+          <label class="o-form__label" for="tel" >Телефон</label>
+          <input class="o-form__input" type="tel" name="phone"  name="phone" data-mask="+7(___)___-____" value="" placeholder="" required>
+        </div>
+        <div class="o-form__group">
+          <label class="o-form__label" for="email" required>E-mail</label>
+          <input class="o-form__input" type="email" id="dynamic-label-input">
+        </div>
+         <div class="o-form__group">
+          <label class="o-form__label" for="name">Город</label>
+          <input class="o-form__input" type="text" id="dynamic-label-input" >
+        </div>
+         <div class="o-form__group o-form__group_checked">
+          <input class="o-form__checkbox" type="checkbox" id="confirmationInfo" name="confirmation" value="Подтверждение" >
+          <label class="o-form__label" for="confirmationInfo">я подтверждаю своё согласие с условиями пользовательского соглашения.</label>
+        </div>
+        <div class="o-form__button-holder">
+        <button class="o-form__button">Подать заявку</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="o-tab">
+      <input type="radio" name="info-tabs" id="tab-2" class="o-tab__switch">
+      <label for="tab-2" class="o-tab__title">Рефинансирование</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+        <p class="o-tab__content-text">
+      Решение по онлайн-заявке за 5 минут Погасите неограниченное количество кредитов и кредитных карт Можно взять дополнительную сумму на любые цели Достаточно паспорта РФ и справки об остатке долга по кредиту </p>
+      <div class="o-tab__content-action o-tab__content-action_money"></div>
+    </div>
+    <div class="o-tab__form">
+      <div class="o-tab__form-holder">
+        <div class="o-form__group">
+          <label class="o-form__label" for="name">ФИО</label>
+          <input class="o-form__input" type="name" id="dynamic-label-input" >
+        </div>
+        <div class="o-form__group">
+          <label class="o-form__label" for="tel" >Телефон</label>
+          <input class="o-form__input" type="tel" name="phone"  name="phone" data-mask="+7(___)___-____" value="" placeholder="" required>
+        </div>
+        <div class="o-form__group">
+          <label class="o-form__label" for="email" required>E-mail</label>
+          <input class="o-form__input" type="email" id="dynamic-label-input">
+        </div>
+         <div class="o-form__group">
+          <label class="o-form__label" for="name">Город</label>
+          <input class="o-form__input" type="text" id="dynamic-label-input" >
+        </div>
+         <div class="o-form__group o-form__group_checked">
+          <input class="o-form__checkbox" type="checkbox" id="confirmationInfo" name="confirmation" value="Подтверждение" >
+          <label class="o-form__label" for="confirmationInfo">я подтверждаю своё согласие с условиями пользовательского соглашения.</label>
+        </div>
+        <div class="o-form__button-holder">
+        <button class="o-form__button">Подать заявку</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="o-tab">
+      <input type="radio" name="info-tabs" id="tab-3" class="o-tab__switch">
+      <label for="tab-3" class="o-tab__title">Материнский капитал</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+      <p class="o-tab__content-text">
+      Федеральным законом от 03.07.2019 № 157-ФЗ предусмотрена возможность возникновения у граждан — заемщиков по ипотечным жилищным кредитам (займам) при рождении у них в период с 1 января 2019 года по 31 декабря 2022 года третьего или последующих детей права на получение государственной поддержки для целей полного или частичного погашения задолженности по ипотечному кредиту (займу) в размере не более 450 тыс. рублей. Подробнее о мерах поддержки в юридической справке.</p>
+      <div class="o-tab__content-action o-tab__content-action_child"></div>
+    </div>
+    
+   <div class="o-tab__form">
+      <div class="o-tab__form-holder">
+        <div class="o-form__group">
+          <label class="o-form__label" for="name">ФИО</label>
+          <input class="o-form__input" type="name" id="dynamic-label-input" >
+        </div>
+        <div class="o-form__group">
+          <label class="o-form__label" for="tel" >Телефон</label>
+          <input class="o-form__input" type="tel" name="phone"  name="phone" data-mask="+7(___)___-____" value="" placeholder="" required>
+        </div>
+        <div class="o-form__group">
+          <label class="o-form__label" for="email" required>E-mail</label>
+          <input class="o-form__input" type="email" id="dynamic-label-input">
+        </div>
+         <div class="o-form__group">
+          <label class="o-form__label" for="name">Город</label>
+          <input class="o-form__input" type="text" id="dynamic-label-input" >
+        </div>
+         <div class="o-form__group o-form__group_checked">
+          <input class="o-form__checkbox" type="checkbox" id="confirmationInfo" name="confirmation" value="Подтверждение" >
+          <label class="o-form__label" for="confirmationInfo">я подтверждаю своё согласие с условиями пользовательского соглашения.</label>
+        </div>
+        <div class="o-form__button-holder">
+        <button class="o-form__button">Подать заявку</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="t-section">
+  <div class="t-about">
+    <h2 class="t-about__title">О нас</h2>
+    <p class="t-about__text">Центр семейной ипотеки работает на рынке более 10 лет. Полный спектр услуг, связанных с подбором и одобрением семейной ипотеки, согласования материнского капитала в качестве первоначального взноса или досрочного погашения по ипотеке. Полное юридическое сопровождение по вопросу выделения долей несовершеннолетним, реализацией имущества с целью увеличения жилплощади и другим вопросам.</p>
+  </div>
+  </section>
+
+   <script src="js/script.js"></script>
 </body>
 </html>

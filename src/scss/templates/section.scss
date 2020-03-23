@@ -1,0 +1,7 @@
+.t-section {
+    @include container_global;
+    margin-bottom: 80px;
+}
+.t-section_full {
+    @include container_free;
+}

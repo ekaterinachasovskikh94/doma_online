@@ -9,6 +9,7 @@ body {
 
 h1 {
   font-weight: unset;
+  margin: 0;
 }
 
 a {
@@ -33,4 +34,9 @@ figure {
 
 &>* {
   box-sizing: border-box;
+}
+
+.a-body_static {
+    overflow-y: hidden;
+    max-height: 100%;
 }

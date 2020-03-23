@@ -1,0 +1,12 @@
+.t-tabs {
+
+
+}
+
+.t-tabs__holder {
+
+@include grid(16px, 16px, 3, calc(100% / 3), 0);
+min-height: 768px;
+  width: calc(100% - 32px);
+  position: relative;
+}
