@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("var burgerMenu = document.querySelectorAll('.t-header');\n\nfor (var i = 0, j = burgerMenu.length; i < j; i++) {\n  burgerMenu[i].addEventListener('click', function (e) {\n    if (hasClass(e.target, 'j-m-burger')) {\n      this.querySelector('.j-mobile-nav').classList.toggle('o-header__menu_visible ');\n      this.querySelector('.j-mobile-nav').classList.toggle('o-header__menu_hidden');\n      document.querySelector('body').classList.toggle('a-body_static');\n    }\n  });\n}\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 
