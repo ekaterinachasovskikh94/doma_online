@@ -16,11 +16,11 @@
   </div>
   <div class="o-header__block j-mobile-nav">
   <nav class="o-header__menu o-header__menu_hidden">
-    <a href="" class="o-header__menu-item">Услуги</a>
-    <a href="" class="o-header__menu-item">О компании</a>
-    <a href="" class="o-header__menu-item">Стоимость</a>
-    <a href="" class="o-header__menu-item">Партнеры</a>
-    <a href="" class="o-header__menu-item">Контакты</a>
+    <a href="#service" class="o-header__menu-item">Услуги</a>
+    <a href="#about" class="o-header__menu-item">О компании</a>
+    <a href="#cost" class="o-header__menu-item">Стоимость</a>
+    <a href="#partners" class="o-header__menu-item">Партнеры</a>
+    <a href="#contacts" class="o-header__menu-item">Контакты</a>
   </nav>
   <div class="o-header__tel-holder">
     <a class="o-header__tel" href="tel:88005000000">8-800-500-00-00</a>
@@ -63,7 +63,8 @@
   </div>
 </section>
 
-<section class="t-section">
+<section id="service" class="t-section">
+  <h2 class="t-section__title">Услуги</h2>
   <div class="t-tabs">
     <div class="t-tabs__holder">
     <div class="o-tab">
@@ -185,12 +186,49 @@
   </div>
 </section>
 
-<section class="t-section">
+<section  class="t-section">
+  <div class="t-tabs">
+    <div class="t-tabs__holder t-tabs__holder_height">
+    <div class="o-tab">
+      <input type="radio" name="info-double-tabs" id="tab-double-1" checked class="o-tab__switch">
+      <label for="tab-double-1" class="o-tab__title">Программа Молодая семья</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+        <p class="o-tab__content-text">
+        Помощь в приобретении жилья для семьи, где один из супругов младше 35 лет.</p>
+       <p class="o-tab__content-text">Ставки от 8,5% Сумма до 30 млн.</p>
+     </div>
+    </div>
+    </div>
+    <div class="o-tab">
+      <input type="radio" name="info-double-tabs" id="tab-double-2" class="o-tab__switch">
+      <label for="tab-double-2" class="o-tab__title">Программма поддержки семей с детьми</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+        <p class="o-tab__content-text">Помощь в приобретении жилья по программе господдержки.</p>
+        <p class="o-tab__content-text">Ставки от 4,7% Сумма до 12 млн.</p>
+    </div>
+    </div>
+    </div>
+    <div class="o-tab">
+      <input type="radio" name="info-double-tabs" id="tab-double-3" class="o-tab__switch">
+      <label for="tab-double-3" class="o-tab__title">Военная ипотека</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+      <p class="o-tab__content-text">Помощь в приобретении жилья для военнослужащих.</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="about" class="t-section">
   <h2 class="t-section__title">О нас</h2>
   <div class="t-about">
     <p class="t-about__text">Центр семейной ипотеки работает на рынке более 10 лет. Полный спектр услуг, связанных с подбором и одобрением семейной ипотеки, согласования материнского капитала в качестве первоначального взноса или досрочного погашения по ипотеке. Полное юридическое сопровождение по вопросу выделения долей несовершеннолетним, реализацией имущества с целью увеличения жилплощади и другим вопросам.</p>
   </div>
   </section>
+
 
 <!--   <section class="t-section">
   <div class="t-double-tabs">
@@ -234,7 +272,7 @@
   </div>
 </section> -->
 
-  <section class="t-section">
+  <section id="cost" class="t-section">
     <h2 class="t-section__title">Стоимость</h2>
     <div class="t-offer">
       <div class="o-offer">
@@ -255,7 +293,7 @@
     </div>
      </section>
 
-     <section class="t-section">
+     <section id="partners" class="t-section">
       <h2 class="t-section__title">Партнеры</h2>
       <div class="t-gallery">
         <div class="o-gallery">
@@ -283,7 +321,7 @@
         </div>
         </div>
       </section>
-      <footer class="t-footer">
+      <footer id="contacts" class="t-footer">
         <h2 class="t-footer__title">Контакты</h2>
         <div class="o-footer">
           
