@@ -5,3 +5,10 @@
 .t-section_full {
     @include container_free;
 }
+.t-section__title {
+  @include font-title-lato;
+}
+
+.t-footer__information-text {
+  @include font-text-small;
+}

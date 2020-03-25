@@ -70,6 +70,16 @@
     font-size: 1rem;
     line-height: 1;
 }
+@mixin font-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+}
+@mixin font-text-height-small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+}
 @mixin font-text-height {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
@@ -79,6 +89,12 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
+    line-height: 1;
+}
+@mixin font-text-small {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
     line-height: 1;
 }
 @mixin font-text-lato {
@@ -102,7 +118,7 @@
 @mixin font-button-lato-big {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 30px;
     line-height: 1;
 }
 @mixin font-button-lato-medium {
@@ -123,6 +139,7 @@
     font-size: 1.5rem;
     line-height: 1;
 }
+
 @mixin font-text-lato-bold-small {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -139,6 +156,24 @@
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 4.5rem;
+    line-height: 1;
+}
+@mixin font-title-lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 1;
+}
+@mixin font-name-cost-lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+    line-height: 1;
+}
+@mixin font-info-lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
     line-height: 1;
 }
 @mixin font-text-lato-bold-small {

@@ -16,11 +16,11 @@
   </div>
   <div class="o-header__block j-mobile-nav">
   <nav class="o-header__menu o-header__menu_hidden">
-    <a href="" class="o-header__menu-item">Услуги</a>
-    <a href="" class="o-header__menu-item">О компании</a>
-    <a href="" class="o-header__menu-item">Стоимость</a>
-    <a href="" class="o-header__menu-item">Партнеры</a>
-    <a href="" class="o-header__menu-item">Контакты</a>
+    <a href="#service" class="o-header__menu-item">Услуги</a>
+    <a href="#about" class="o-header__menu-item">О компании</a>
+    <a href="#cost" class="o-header__menu-item">Стоимость</a>
+    <a href="#partners" class="o-header__menu-item">Партнеры</a>
+    <a href="#contacts" class="o-header__menu-item">Контакты</a>
   </nav>
   <div class="o-header__tel-holder">
     <a class="o-header__tel" href="tel:88005000000">8-800-500-00-00</a>
@@ -63,7 +63,8 @@
   </div>
 </section>
 
-<section class="t-section">
+<section id="service" class="t-section">
+  <h2 class="t-section__title">Услуги</h2>
   <div class="t-tabs">
     <div class="t-tabs__holder">
     <div class="o-tab">
@@ -149,7 +150,7 @@
       <div class="o-tab__content">
       <p class="o-tab__content-text">
       Федеральным законом от 03.07.2019 № 157-ФЗ предусмотрена возможность возникновения у граждан — заемщиков по ипотечным жилищным кредитам (займам) при рождении у них в период с 1 января 2019 года по 31 декабря 2022 года третьего или последующих детей права на получение государственной поддержки для целей полного или частичного погашения задолженности по ипотечному кредиту (займу) в размере не более 450 тыс. рублей. Подробнее о мерах поддержки в юридической справке.</p>
-      <div class="o-tab__content-action o-tab__content-action_child"></div>
+      <!-- <div class="o-tab__content-action o-tab__content-action_child"></div> -->
     </div>
     
    <div class="o-tab__form">
@@ -184,13 +185,192 @@
   </div>
   </div>
 </section>
-<section class="t-section">
+
+<section  class="t-section">
+  <div class="t-tabs">
+    <div class="t-tabs__holder t-tabs__holder_height">
+    <div class="o-tab">
+      <input type="radio" name="info-double-tabs" id="tab-double-1" checked class="o-tab__switch">
+      <label for="tab-double-1" class="o-tab__title">Программа Молодая семья</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+        <p class="o-tab__content-text">
+        Помощь в приобретении жилья для семьи, где один из супругов младше 35 лет.</p>
+       <p class="o-tab__content-text">Ставки от 8,5% Сумма до 30 млн.</p>
+     </div>
+    </div>
+    </div>
+    <div class="o-tab">
+      <input type="radio" name="info-double-tabs" id="tab-double-2" class="o-tab__switch">
+      <label for="tab-double-2" class="o-tab__title">Программма поддержки семей с детьми</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+        <p class="o-tab__content-text">Помощь в приобретении жилья по программе господдержки.</p>
+        <p class="o-tab__content-text">Ставки от 4,7% Сумма до 12 млн.</p>
+    </div>
+    </div>
+    </div>
+    <div class="o-tab">
+      <input type="radio" name="info-double-tabs" id="tab-double-3" class="o-tab__switch">
+      <label for="tab-double-3" class="o-tab__title">Военная ипотека</label>
+      <div class="o-tab__block">
+      <div class="o-tab__content">
+      <p class="o-tab__content-text">Помощь в приобретении жилья для военнослужащих.</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="about" class="t-section">
+  <h2 class="t-section__title">О нас</h2>
   <div class="t-about">
-    <h2 class="t-about__title">О нас</h2>
     <p class="t-about__text">Центр семейной ипотеки работает на рынке более 10 лет. Полный спектр услуг, связанных с подбором и одобрением семейной ипотеки, согласования материнского капитала в качестве первоначального взноса или досрочного погашения по ипотеке. Полное юридическое сопровождение по вопросу выделения долей несовершеннолетним, реализацией имущества с целью увеличения жилплощади и другим вопросам.</p>
   </div>
   </section>
 
+
+<!--   <section class="t-section">
+  <div class="t-double-tabs">
+    <div class="t-double-tabs__holder">
+    <div class="o-double-tab">
+      <input type="radio" name="info-tabs" id="tab-double-1" checked class="o-double-tab__switch">
+      <label for="tab-double-1" class="o-tab__title">Семейная ипотека</label>
+      <div class="o-double-tab__block">
+      <div class="o-double-tab__content">
+        <p class="o-double-tab__content-text">
+       В рамках программы «Семейная ипотека с государственной поддержкой» возможно взять кредит на покупку недвижимости или оформить рефинансирование ранее оформленной ипотеки по льготной ставке.</p>
+       <div class="o-double-tab__content-action o-double-tab__content-action_rose"></div>
+     </div>
+    </div>
+    </div>
+    <div class="o-double-tab">
+      <input type="radio" name="info-tabs" id="tab-double-2" class="o-double-tab__switch">
+      <label for="tab-double-2" class="o-double-tab__title">Рефинансирование</label>
+      <div class="o-double-tab__block">
+      <div class="o-double-tab__content">
+        <p class="o-double-tab__content-text">
+      Решение по онлайн-заявке за 5 минут Погасите неограниченное количество кредитов и кредитных карт Можно взять дополнительную сумму на любые цели Достаточно паспорта РФ и справки об остатке долга по кредиту </p>
+      <div class="o-double-tab__content-action o-double-tab__content-action_money"></div>
+    </div>
+
+    </div>
+    </div>
+    <div class="o-double-tab">
+      <input type="radio" name="info-tabs" id="tab-double-3" class="o-double-tab__switch">
+      <label for="tab-double-3" class="o-double-tab__title">Материнский капитал</label>
+      <div class="o-double-tab__block">
+      <div class="o-double-tab__content">
+      <p class="o-double-tab__content-text">
+      Федеральным законом от 03.07.2019 № 157-ФЗ предусмотрена возможность возникновения у граждан — заемщиков по ипотечным жилищным кредитам (займам) при рождении у них в период с 1 января 2019 года по 31 декабря 2022 года третьего или последующих детей права на получение государственной поддержки для целей полного или частичного погашения задолженности по ипотечному кредиту (займу) в размере не более 450 тыс. рублей. Подробнее о мерах поддержки в юридической справке.</p>
+    </div>
+    
+
+    </div>
+    </div>
+  </div>
+  </div>
+</section> -->
+
+  <section id="cost" class="t-section">
+    <h2 class="t-section__title">Стоимость</h2>
+    <div class="t-offer">
+      <div class="o-offer">
+        <span class="o-offer__name">Одобрение ипотеки</span>
+        <span class="o-offer__cost">15 000 рублей</span>
+        <span class="o-offer__info">Консультация - БЕСПЛАТНО</span>
+      </div>
+            <div class="o-offer">
+        <span class="o-offer__name">Одобрение ипотеки</span>
+        <span class="o-offer__cost">15 000 рублей</span>
+        <span class="o-offer__info">Консультация - БЕСПЛАТНО</span>
+      </div>
+            <div class="o-offer">
+        <span class="o-offer__name">Одобрение ипотеки</span>
+        <span class="o-offer__cost">15 000 рублей</span>
+        <span class="o-offer__info">Консультация - БЕСПЛАТНО</span>
+      </div>
+    </div>
+     </section>
+
+     <section id="partners" class="t-section">
+      <h2 class="t-section__title">Партнеры</h2>
+      <div class="t-gallery">
+        <div class="o-gallery">
+          <div class="o-gallery__item">
+            <img src="img/bars-bank.svg" alt="" class="o-gallery__item-img">
+          </div>
+          <div class="o-gallery__item">
+            <img src="img/vtb-bank.svg" alt="" class="o-gallery__item-img">
+          </div>
+          <div class="o-gallery__item">
+            <img src="img/ros-bank.svg" alt="" class="o-gallery__item-img">
+          </div>
+          <div class="o-gallery__item">
+            <img src="img/prom-bank.svg" alt="" class="o-gallery__item-img">
+          </div>
+          <div class="o-gallery__item">
+            <img src="img/absolut-bank.svg" alt="" class="o-gallery__item-img">
+          </div>
+          <div class="o-gallery__item">
+            <img src="img/raif-bank.svg" alt="" class="o-pgallery__item-img">
+          </div>
+          <div class="o-gallery__item">
+            <img src="img/sber-bank.svg" alt="" class="o-gallery__item-img">
+          </div>
+        </div>
+        </div>
+      </section>
+      <footer id="contacts" class="t-footer">
+        <h2 class="t-footer__title">Контакты</h2>
+        <div class="o-footer">
+          
+          <div class="o-footer__contact">
+            <div class="o-footer__contact-info-holder">
+            <span class="o-footer__contact-info">Адрес: г.Санкт-Птербург, Невский пр., 32-34</span> 
+            <span class="o-footer__contact-info">Режим работы: Пн-Пт с 10:00 до 19:00</span>
+            <span class="o-footer__contact-info">Сб-Вс: с 11:00 до 17:00</span>
+            <span class="o-footer__contact-info">Телефон: +7 (812) 607-70-06</span>
+            </div>
+                 <div class="o-footer__social">
+                  <a href="" class="o-footer__social-item o-footer__social-item_vk"></a>
+                  <a href="" class="o-footer__social-item o-footer__social-item_telegram"></a>
+                  <a href="" class="o-footer__social-item o-footer__social-item_instagram"></a>
+                  <a href="" class="o-footer__social-item o-footer__social-item_facebook"></a>
+                 </div>
+          </div>
+          <div class="o-footer__block">
+              <span class="o-footer__title">Закажите звонок</span>
+              <p class="o-footer__description">Оставьте ваши контакты и наш</p> 
+              <p class="o-footer__description">консультант свяжется с вами</p>
+              <div class="o-footer__form">
+                <div class="o-footer__form-holder">
+                <div class="o-form__group">
+                    <input class="o-form__input" type="name" id="dynamic-label-input" placeholder="ФИО">
+                  </div>
+                  <div class="o-form__group">
+                    <input class="o-form__input" type="tel" name="phone"  name="phone" data-mask="+7(___)___-____" value="" placeholder="" required>
+                  </div>
+                  </div>
+                  <div class="o-footer__form-holder">
+                   <div class="o-form__group o-form__group_checked">
+                      <input class="o-form__checkbox" type="checkbox" id="confirmationInfo" name="confirmation" value="Подтверждение" >
+                      <label class="o-form__label" for="confirmationInfo">я подтверждаю своё согласие с условиями пользовательского соглашения.</label>
+                      </div>
+                        <div class="o-form__button-holder">
+                            <button class="o-form__button">Заказать</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+
+      <div class="t-footer__information">
+        <p class="t-footer__information-text">Универсальная лицензия ЦБ РФ № 22222 от 19 декабря 2001 года.</p>
+        <p class="t-footer__information-text">Политика в отношении обработки персональных данных в АО «Dom Online».</p>
+      </div>
+      </footer>
    <script src="js/script.js"></script>
 </body>
 </html>

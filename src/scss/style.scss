@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 //utilities
 @import 'utilities/fonts';
 @import 'utilities/container';
@@ -16,9 +17,18 @@
 @import 'organisms/preview';
 @import 'organisms/tabs';
 @import 'organisms/form';
+@import 'organisms/offer';
+@import 'organisms/gallery';
+@import 'organisms/footer';
+@import 'organisms/double-tabs';
 
 //templates
 @import 'templates/header';
 @import 'templates/section';
 @import 'templates/preview';
 @import 'templates/tabs';
+@import 'templates/about';
+@import 'templates/offer';
+@import 'templates/gallery';
+@import 'templates/footer';
+@import 'templates/double-tabs';

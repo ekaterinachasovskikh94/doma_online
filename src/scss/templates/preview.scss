@@ -30,7 +30,7 @@ flex-direction: column;
 h1.t-preview__title {
   @include font-text-lato-bold-big; 
   margin: 0;
-  margin-bottom: 32px;
+  margin: 32px 0;
         @media(max-width: 1200px) {
           // margin-bottom: 16px;
           margin: 0;

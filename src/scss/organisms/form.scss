@@ -5,6 +5,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .o-footer__form-holder & {
+    width: calc(50% - 16px);
+  }
 }
 
 .o-form__button-holder {
@@ -13,11 +17,14 @@
 }
 .o-form__button {
   @include button-main-medium;
+    .o-footer__form-holder & {
+    @include button-main-big;
+  }
 }
   .o-form__label {
     .o-form__group_checked & {
-    text-align: left;
-    margin-left: 32px;
+    // text-align: left;
+    // margin-left: 32px;
   }
 }
  .o-form__group_checked {
@@ -27,6 +34,7 @@
   @include font-text-lato;
   cursor: pointer;
   padding-bottom: 12px;
+  display: inline-flex;
 
     &:last-child {
     padding-bottom: 0;
@@ -80,14 +88,15 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
        @include  font-text-lato-small;
          &:before {
     content: '';
-    position: absolute;
-    display: inline-block;
-    width: 20px;
+    position: relative;
+    
+    min-width: 20px;
     height: 20px;
     border: 1px solid $main-color;
     background-color: $white;
     vertical-align: middle;
-    right: calc(34% - 4px);
+    margin-right: 16px;
+    // right: calc(34% - 4px);
          }
      }
  }

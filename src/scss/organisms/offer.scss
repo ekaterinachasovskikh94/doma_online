@@ -1,0 +1,21 @@
+.o-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $main-color;
+  padding: 32px;
+}
+
+.o-offer__name {
+  @include font-text-lato-bold;
+  padding-bottom: 64px;
+}
+
+.o-offer__cost {
+  @include font-name-cost-lato;
+  padding-bottom: 100px;
+}
+
+.o-offer__info {
+  @include font-info-lato;
+}

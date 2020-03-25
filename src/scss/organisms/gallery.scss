@@ -1,0 +1,20 @@
+.o-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @media(max-width: 900px) { 
+    justify-content: flex-start;
+  }
+  @media(max-width: 900px) { 
+    flex-direction: column;
+    & > * {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}

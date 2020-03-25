@@ -1,0 +1,8 @@
+.t-gallery {
+  border-bottom: 1px solid $main-color;
+  padding-bottom: 80px;
+  @media(max-width: 568px) { 
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+}

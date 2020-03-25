@@ -1,0 +1,7 @@
+.t-about {
+  width: 60%;
+}
+
+.t-about__text {
+ @include font-text-height;
+}
