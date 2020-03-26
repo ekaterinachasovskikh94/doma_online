@@ -2,6 +2,9 @@
   // width: calc(100% - 32px);
   display: flex;
   justify-content: space-between;
+                 @media(max-width: 1000px) {
+          flex-direction: column;
+      }
 }
 .o-footer__contact {
   // width: calc(40% - 16px);
@@ -20,6 +23,9 @@
 .o-footer__form-holder {
   display: flex;
   justify-content: space-between;
+                 @media(max-width: 1000px) {
+          flex-direction: column;
+      }
 }
 .o-footer__social {
   display: flex;

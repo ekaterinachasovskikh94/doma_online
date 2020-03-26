@@ -1,9 +1,14 @@
 .t-preview {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   position: relative;
        @media(max-width: 1200px) {
+        margin-top: 40px;
 flex-direction: column;
+  }
+  @media(max-width: 568px) {
+margin-top: 0;
   }
 }
 .t-preview__holder {

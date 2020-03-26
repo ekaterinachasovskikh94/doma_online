@@ -1,14 +1,23 @@
 .t-section {
     @include container_global;
     margin-bottom: 80px;
+      @media(max-width: 568px) {
+margin-bottom: 64px;
+  }
 }
 .t-section_full {
     @include container_free;
 }
 .t-section__title {
   @include font-title-lato;
+    @media(max-width: 568px) {
+          display: flex;
+          justify-content: center;
+      }
 }
+.t-section_hidden-mobile {
+          @media(max-width: 900px) {
+display: none;
+  }
 
-.t-footer__information-text {
-  @include font-text-small;
 }

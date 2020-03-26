@@ -4,6 +4,7 @@
 
 .o-tab{
 @include font-button-lato;
+
 }
 
 #tab-1 {
@@ -25,7 +26,7 @@ label[for="tab-1"] {
              content: '';
              position: relative;
              display: block;
-                 width: calc(100% - 16px);
+                 // width: calc(100% - 16px);
              height: 20px;
              margin-bottom: 16px;
              border: 1px solid $main-color;
@@ -36,6 +37,10 @@ label[for="tab-1"] {
              background-color: $main-color;
              cursor: default;
             }
+                          @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+              }
          }
      }
  }
@@ -46,7 +51,7 @@ label[for="tab-2"] {
              content: '';
              position: relative;
              display: block;
-                 width: calc(100% - 16px);
+                 // width: calc(100% - 16px);
              height: 20px;
              margin-bottom: 16px;
              border: 1px solid $main-color;
@@ -57,6 +62,10 @@ label[for="tab-2"] {
              background-color: $main-color;
              cursor: default;
             }
+                          @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+              }
          }
      }
  }
@@ -68,17 +77,21 @@ label[for="tab-2"] {
              content: '';
              position: relative;
              display: block;
-                 width: calc(100% - 16px);
+                 // width: calc(100% - 16px);
              height: 20px;
              margin-bottom: 16px;
              border: 1px solid $main-color;
              background-color: $white;
              vertical-align: middle;
-                                       @media(max-width: 1000px) {
+            @media(max-width: 1000px) {
                 border: 1px solid $main-color;
              background-color: $main-color;
              cursor: default;
             }
+              @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+              }
          }
      }
  }
@@ -91,12 +104,18 @@ label[for="tab-2"] {
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
+  min-height: 164px;
+  @media(max-width: 568px) {
+cursor: default;
+min-height: 72px;
+text-align: center;
+  }
 }
 .o-tab__block {
   display: flex;
   justify-content: space-between;
   width: calc(100% + 32px);
-  margin-top: 80px;
+  // margin-top: 80px;
     max-height: 87%;
     position: absolute;
   z-index: 1;
@@ -133,7 +152,13 @@ width: calc(60% - 16px);
              vertical-align: middle;
                transition: all 0.35s;
   z-index: 1;
+                         @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+
+              }
          }
+
 
 }
 .o-tab__switch:checked + label + .o-tab__block {
@@ -179,7 +204,7 @@ width: calc(60% - 16px);
 .o-tab__form {
   width: calc(40% - 32px);
        @media(max-width: 1000px) {
-          min-width: 240px;
+          width: 100%;
       }
 }
 
@@ -187,6 +212,12 @@ width: calc(60% - 16px);
   max-width: 482px;
   border: 1px solid $main-color;
   padding: 48px 24px;
+         @media(max-width: 1000px) {
+          width: 240px;
+      }
+               @media(max-width: 568px) {
+          width: auto;
+      }
 }
 
 input[type=checkbox] {
@@ -201,7 +232,7 @@ label[for="tab-double-1"] {
              content: '';
              position: relative;
              display: block;
-                 width: calc(100% - 16px);
+                 // width: calc(100% - 16px);
              height: 20px;
              margin-bottom: 16px;
              border: 1px solid $main-color;
@@ -212,6 +243,10 @@ label[for="tab-double-1"] {
              background-color: $main-color;
              cursor: default;
             }
+                          @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+              }
          }
      }
  }
@@ -222,7 +257,7 @@ label[for="tab-double-2"] {
              content: '';
              position: relative;
              display: block;
-                 width: calc(100% - 16px);
+                 // width: calc(100% - 16px);
              height: 20px;
              margin-bottom: 16px;
              border: 1px solid $main-color;
@@ -233,6 +268,10 @@ label[for="tab-double-2"] {
              background-color: $main-color;
              cursor: default;
             }
+                          @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+              }
          }
      }
  }
@@ -244,7 +283,7 @@ label[for="tab-double-2"] {
              content: '';
              position: relative;
              display: block;
-                 width: calc(100% - 16px);
+                 // width: calc(100% - 16px);
              height: 20px;
              margin-bottom: 16px;
              border: 1px solid $main-color;
@@ -255,6 +294,10 @@ label[for="tab-double-2"] {
              background-color: $main-color;
              cursor: default;
             }
+                          @media(max-width: 568px) {
+                margin-bottom: 8px;
+                height: 10px;
+              }
          }
      }
  }

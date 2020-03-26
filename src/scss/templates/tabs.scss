@@ -5,7 +5,7 @@
 
 .t-tabs__holder {
 
-@include grid(16px, 16px, 3, calc(calc(100% / 3) + 4px), 0);
+@include grid(16px, 16px, 3, calc(100% / 3), 0);
 min-height: 768px;
   width: calc(100% - 32px);
   position: relative;
@@ -15,6 +15,9 @@ min-height: 768px;
         width: 100%;
         position: static;
         height: auto;
+        &>* {
+          margin-bottom: 64px;
+        }
       }
 }
 

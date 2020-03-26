@@ -8,6 +8,12 @@
 
   .o-footer__form-holder & {
     width: calc(50% - 16px);
+       @media(max-width: 1000px) {
+          max-width: 255px;
+      }
+             @media(max-width: 568px) {
+          width: auto;
+      }
   }
 }
 
@@ -42,6 +48,9 @@
 }
 .o-form__input {
   padding: 14px;
+      @media(max-width: 568px) {
+          padding: 6px;
+      }
 }
 input {
   &.o-form__input {
@@ -83,6 +92,93 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
  }
 
  label[for="confirmationInfo"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato-small;
+         &:before {
+    content: '';
+    position: relative;
+    
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    margin-right: 16px;
+    // right: calc(34% - 4px);
+         }
+     }
+ }
+ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo-ref"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfo-ref"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato-small;
+         &:before {
+    content: '';
+    position: relative;
+    
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    margin-right: 16px;
+    // right: calc(34% - 4px);
+         }
+     }
+ }
+  input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo-mat"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfo-mat"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato-small;
+         &:before {
+    content: '';
+    position: relative;
+    
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    margin-right: 16px;
+    // right: calc(34% - 4px);
+         }
+     }
+ }
+ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfoContact"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfoContact"] {
      &.o-form__label {
        vertical-align: middle;
        @include  font-text-lato-small;
