@@ -23,12 +23,6 @@
 }
 .o-form__button {
   @include button-main-medium;
-    .o-footer__form-holder & {
-    @include button-main-big;
-        @media(max-width: 568px) {
-          @include button-main-small;
-      }
-  }
 }
   .o-form__label {
     .o-form__group_checked & {
