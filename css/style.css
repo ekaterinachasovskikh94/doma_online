@@ -684,6 +684,8 @@ label[for="tab-double-3"].o-tab__title {
   @media (max-width: 1200px) {
     .o-form__button {
       min-width: 120px; } }
+  .o-footer__form-holder .o-form__button {
+    height: 24px; }
 
 .o-form__group_checked {
   margin-bottom: 40px; }
@@ -1023,6 +1025,35 @@ p.o-footer__description {
       font-weight: normal;
       font-size: 0.75rem;
       line-height: 1; } }
+
+.o-err-404-holder {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 300px;
+  color: #71B02D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1200px) {
+    .o-err-404-holder {
+      font-size: 150px; } }
+
+.o-err-404 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 300px;
+  color: #71B02D; }
+  @media (max-width: 1200px) {
+    .o-err-404 {
+      font-size: 150px; } }
 
 .t-header {
   width: 100%;
