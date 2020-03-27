@@ -5,52 +5,92 @@
   width: 100%;
     @media(max-width: 1097px) {
     justify-content: space-between;
+    .t-header_active & {
+      flex-direction: column;
+    }
+  }
+  @media(max-width: 1200px) {
+    padding: 16px 0;
   }
 }
 .o-header__logo {
   width: 30%;
+  .t-header_active & {
+    display: none;
+  }
+}
+.o-header__logo-img {
+  display: block;
+    @media(max-width: 568px) {
+    display: none;
+  }
+}
+.o-header__logo.is-open {
+  display: none;
+} 
+.o-header__logo-img_mob {
+display: none;
+  @media(max-width: 568px) {
+    display: block;
+  }
 }
 .o-header__block {
   width: 70%;
     display: flex;
   align-items: center;
 
-  @media(max-width: 1097px) {
-
+  @media(max-width: 1200px) {
+display: flex;
+flex-direction: column;
   }
 }
 .o-header__menu {
   width: 70%;
   display: flex;
   justify-content: space-around;
-    @media(max-width: 1097px) {
-
+    @media(max-width: 1200px) {
+      // width: 100%;
+      width: auto;
+      display: flex;
+      flex-direction: column;
     }
 }
 
-  @media(max-width: 1097px) {
-  .o-header__menu_hidden {
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-      visibility: hidden;
-      transform: translateX(100%);
-  }
+.o-header__menu.is-open {
+    @media (min-width: 1200px) {
+        display: block;
+    }
 
-  .o-header__menu_visible {
-    opacity: 1;
-    visibility: visible;
-    overflow-y: auto;
-    transition: all,ease-in-out,.2s;
-    transform: translateX(0);
-    width: 100%;
-    position: fixed;
-    background-color: #fff;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-  }
+    @media (max-width: 1200px) {
+        display: none;
+        opacity: 0;
+        // color: #434343;
+    }
 }
+
+//   @media(max-width: 1000px) {
+//   .o-header__menu_hidden {
+//       max-height: 0;
+//       opacity: 0;
+//       overflow: hidden;
+//       visibility: hidden;
+//       transform: translateX(100%);
+//   }
+
+//   .o-header__menu_visible {
+//     opacity: 1;
+//     visibility: visible;
+//     overflow-y: auto;
+//     transition: all,ease-in-out,.2s;
+//     transform: translateX(0);
+//     width: 100%;
+//     position: fixed;
+//     background-color: #fff;
+//     bottom: 0;
+//     right: 0;
+//     margin: 0;
+//   }
+// }
 
 
 
@@ -59,12 +99,22 @@
   color: $text-color;
   @include font-text;
   cursor: pointer;
+  padding-right: 36px;
+  &:last-child {
+    padding-right: 0;
+  }
+        @media(max-width: 1200px) {
+       color: $white;
+       font-size: 20px;
+       margin-bottom: 8px;
+       // @include font-text-medium;
+    }
 }
 .o-header__tel-holder {
   width: calc(30% - 16px);
   display: flex;
   justify-content: flex-end;
-      @media(max-width: 1097px) {
+      @media(max-width: 1200px) {
       display: none;
     }
 }

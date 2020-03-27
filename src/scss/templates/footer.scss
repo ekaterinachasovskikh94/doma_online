@@ -1,8 +1,12 @@
 .t-footer {
   @include container_global;
+      @media(max-width: 768px) {
+      padding-bottom: 64px;
+    }
 }
 .t-footer__title {
   @include font-title-lato;
+  margin-bottom: 48px;
 }
 
 .t-footer__information {
@@ -11,6 +15,9 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+    @media(max-width: 768px) {
+      display: none;
+    }
 }
 
 .t-footer__information-text {

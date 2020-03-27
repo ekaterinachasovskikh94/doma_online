@@ -93,10 +93,11 @@ font-size: 1rem;
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 1;
-                      @media(max-width: 568px) {
-font-size: 1rem;
+      @media(max-width: 568px) {
+      font-size: 1rem;
   }
 }
+
 @mixin font-text-small {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;

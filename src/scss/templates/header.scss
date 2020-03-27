@@ -1,3 +1,20 @@
 .t-header {
   @include container_global;
+    @media(max-width: 568px) {
+    // padding: 0;
+  }
+}
+
+.t-header_active {
+    // position: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    height: 20%;
+    background: $main-color;
 }

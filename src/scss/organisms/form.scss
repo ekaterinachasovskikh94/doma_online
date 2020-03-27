@@ -8,10 +8,10 @@
 
   .o-footer__form-holder & {
     width: calc(50% - 16px);
-       @media(max-width: 1000px) {
-          max-width: 255px;
-      }
-             @media(max-width: 568px) {
+      //  @media(max-width: 1000px) {
+      //     max-width: 255px;
+      // }
+             @media(max-width: 768px) {
           width: auto;
       }
   }
@@ -25,6 +25,9 @@
   @include button-main-medium;
     .o-footer__form-holder & {
     @include button-main-big;
+        @media(max-width: 568px) {
+          @include button-main-small;
+      }
   }
 }
   .o-form__label {
@@ -35,6 +38,9 @@
 }
  .o-form__group_checked {
   margin-bottom: 40px;
+               @media(max-width: 768px) {
+          margin: 40px 0;
+      }
  }
 .o-form__label {
   @include font-text-lato;

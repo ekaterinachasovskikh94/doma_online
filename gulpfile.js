@@ -59,7 +59,20 @@ function copyFonts() {
 }
 exports.copyFonts = copyFonts;
 
+function copyVendorsJs() {
+  return src([
+    'node_modules/jquery/dist/jquery.min.js',
+    ])
+    .pipe(concat('bundle.js')) 
+    .pipe(dest(`${dir.build}js/`));
+}
+exports.copyVendorsJs = copyVendorsJs;
 
+
+exports.bundle = function()
+{
+  return src(dest(`${dir.build}js/*.js`)) .pipe(concat('file123.js')) .pipe(gulp.dest('./toPutBundledJsHere/'));
+}
 function javascript() {
   return src(`${dir.src}js/script.js`)
       .pipe(plumber())
@@ -120,7 +133,7 @@ function serve() {
 }
 
 function buildSteps() {
-  return parallel(styles, copyHTML, copyImg, copyFonts, javascript);
+  return parallel(styles, copyHTML, copyImg, copyFonts, javascript, copyVendorsJs);
 }
 exports.default = series(
   clean,

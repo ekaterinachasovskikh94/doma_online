@@ -1,3 +1,12 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 @mixin button-main-big {
   border: 1px solid $main-color;
   background: $main-color;
@@ -24,8 +33,9 @@
   background: $main-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 16px;
+  height: 30px;
   color: $white;
   cursor: pointer;
   text-decoration: none;
-  @include font-button-lato-small;
+  @include font-text-small;
 }

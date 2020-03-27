@@ -10,6 +10,8 @@ margin-bottom: 64px;
 }
 .t-section__title {
   @include font-title-lato;
+  margin-bottom: 48px;
+  cursor: default;
     @media(max-width: 568px) {
           display: flex;
           justify-content: center;
