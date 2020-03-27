@@ -48,6 +48,40 @@ import { inherits } from "util";
     });
 })();
 
+(function() {
+
+    var btnBurger = $('.j-main__btn_open');
+    var mainGrid = $('.j-main-grid_show');
+    var isShown = false;
+
+
+
+
+    // Method to change states which works in IE7+ / IE8+
+    var btn = document.querySelector('.j-main-grid_show');
+
+    // asdf
+    var toggleState = function(elm, att, one, two) {
+        var elm = document.querySelector(elm);
+        elm.setAttribute(att, elm.getAttribute(att) === one ? two : one);
+    };
+
+    // setup
+    btn.setAttribute('aria-pressed', 'true');
+
+    // turn active state on or off
+    btn.onclick = function(e) {
+        console.log('aga');
+        toggleState('.j-main-grid_show', 'data-state', 'off', 'on');
+        toggleState('.main-grid__btn-more', 'aria-pressed', 'false', 'true');
+        toggleState('.main-grid__btn-more_mob', 'aria-pressed', 'false', 'true');
+        e.preventDefault();
+    }
+
+    $('.j-main-mob').click(function() {
+        $('.j-main-grid_show').toggleClass('is-grid_show');
+    });
+})();
 
 
 

@@ -177,6 +177,15 @@ font-size: 1.25rem;
 font-size: 1.25rem;
   }
 }
+
+@mixin font-err-404 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 300px;
+      @media(max-width: 1200px) {
+  font-size: 150px;
+}
+}
 @mixin font-name-cost-lato {
     font-family: 'Lato', sans-serif;
     font-weight: bold;

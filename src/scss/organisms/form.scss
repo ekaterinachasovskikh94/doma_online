@@ -8,11 +8,13 @@
 
   .o-footer__form-holder & {
     width: calc(50% - 16px);
+
       //  @media(max-width: 1000px) {
       //     max-width: 255px;
       // }
              @media(max-width: 768px) {
           width: auto;
+
       }
   }
 }
@@ -23,6 +25,9 @@
 }
 .o-form__button {
   @include button-main-medium;
+  .o-footer__form-holder &{
+height: 24px;
+  }
 }
   .o-form__label {
     .o-form__group_checked & {
