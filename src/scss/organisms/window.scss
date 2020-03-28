@@ -1,0 +1,51 @@
+.o-window {
+  border: 1px solid $main-color;
+  max-width: 658px;
+  background-color: $white;
+  margin: auto;
+    @media(max-width: 568px) {
+    height: 100%;
+  }
+}
+.o-window__form {
+  padding: 56px 116px;
+  @media(max-width: 568px) {
+    padding: 44px 32px;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+
+}
+
+.close {
+position: relative;
+    left: calc(100% - 56px);
+    top: 16px;
+    cursor: pointer;
+  background: transparent;
+      padding: 8px 16px;
+  &:before {
+    content: '';
+    position: absolute;
+        bottom: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    background: $grey;
+    width: 4px;
+    height: 36px;
+
+  }
+  &:after {
+        content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    transform: rotate(45deg);
+    background: $grey;
+        width: 4px;
+    height: 36px;
+  }
+}
+

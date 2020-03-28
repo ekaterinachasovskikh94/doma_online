@@ -1,9 +1,15 @@
 .o-gallery {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+      & > * {
+      padding-right: 16px;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   @media(max-width: 900px) { 
     justify-content: flex-start;
   }

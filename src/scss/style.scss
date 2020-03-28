@@ -10,6 +10,7 @@
 @import 'utilities/button';
 //molecules
 @import 'molecules/burger';
+@import 'molecules/select';
 
 //organisms
 @import 'organisms/menu';
@@ -22,6 +23,7 @@
 @import 'organisms/footer';
 @import 'organisms/double-tabs';
 @import 'organisms/err-404';
+@import 'organisms/window';
 
 //templates
 @import 'templates/header';
@@ -33,3 +35,4 @@
 @import 'templates/gallery';
 @import 'templates/footer';
 @import 'templates/double-tabs';
+@import 'templates/window';
