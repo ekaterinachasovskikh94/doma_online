@@ -51,6 +51,10 @@ import { inherits } from "util";
     });
 })();
 
+// Модальное окно 2
+
+
+
 // Модальное окно
 
 // Get the modal
@@ -78,6 +82,40 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// document.getElementById('myBtnPopup').onclick = function() {
+//   modal.style.display = "none";
+// } 
+
+var modalPopup = document.getElementById("myPopup");
+
+var span = document.getElementsByClassName("close-two")[0];
+
+var btnPopup = document.getElementById("myBtnPopup");
+
+document.getElementById('myBtnPopup').onclick = function() {
+  modalPopup.style.display = "block";
+  modal.style.display = "none";
+}
+
+// document.getElementById('myPopup').onclick = function() {
+//   modal.style.display = "none";
+// }
+
+span.onclick = function() {
+  modalPopup.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalPopup) {
+    modalPopup.style.display = "none";
+  }
+}
+
+// function removeModal() {
+//   let Modal = document.querySelector('myModal');
+//   Modal.remove('myModal');
+// }
 
 // Стилизация select
 
