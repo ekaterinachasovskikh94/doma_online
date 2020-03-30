@@ -21,6 +21,7 @@
 }
 .o-header__logo-img {
   display: block;
+  max-width: 260px;
     @media(max-width: 568px) {
     display: none;
   }

@@ -3,12 +3,13 @@
   max-width: 658px;
   background-color: $white;
   margin: auto;
+  padding-top: 40px;
     @media(max-width: 568px) {
     height: 100%;
   }
 }
 .o-window__form {
-  padding: 56px 116px;
+  padding: 16px 56px 116px;
   @media(max-width: 568px) {
     padding: 44px 32px;
   }
@@ -22,7 +23,7 @@
 .close {
 position: relative;
     left: calc(100% - 56px);
-    top: 16px;
+    // top: 16px;
     cursor: pointer;
   background: transparent;
       padding: 8px 16px;
@@ -53,7 +54,7 @@ position: relative;
 .close-two {
 position: relative;
     left: calc(100% - 56px);
-    top: 16px;
+    // top: 16px;
     cursor: pointer;
   background: transparent;
       padding: 8px 16px;

@@ -1,21 +1,35 @@
 .o-offer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   border: 1px solid $main-color;
-  padding: 32px;
+  padding: 48px 32px;
 }
-
+.o-offer__list {
+  padding-left: 20px;
+  min-height: 130px;
+  margin: 0;
+}
+.o-offer__list-item {
+  @include font-text-lato;
+  padding-bottom: 16px;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
 .o-offer__name {
+  text-align: center;
   @include font-text-lato-bold;
   padding-bottom: 64px;
 }
 
 .o-offer__cost {
+  text-align: center;
   @include font-name-cost-lato;
-  padding-bottom: 100px;
+padding: 64px 0;
 }
 
 .o-offer__info {
+  text-align: center;
   @include font-info-lato;
 }

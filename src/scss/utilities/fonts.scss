@@ -110,6 +110,12 @@ font-size: 1rem;
     font-size: 1rem;
     line-height: 1;
 }
+@mixin font-text-lato-action {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 1;
+}
 @mixin font-text-lato-small {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
@@ -171,7 +177,7 @@ font-size: 1.25rem;
 @mixin font-title-lato {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     line-height: 1;
           @media(max-width: 568px) {
 font-size: 1.25rem;

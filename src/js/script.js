@@ -51,11 +51,8 @@ import { inherits } from "util";
     });
 })();
 
-// Модальное окно 2
 
-
-
-// Модальное окно
+// Окно формы заказа
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -83,9 +80,7 @@ window.onclick = function(event) {
   }
 }
 
-// document.getElementById('myBtnPopup').onclick = function() {
-//   modal.style.display = "none";
-// } 
+// Попап после окна формы заказа
 
 var modalPopup = document.getElementById("myPopup");
 
@@ -98,10 +93,6 @@ document.getElementById('myBtnPopup').onclick = function() {
   modal.style.display = "none";
 }
 
-// document.getElementById('myPopup').onclick = function() {
-//   modal.style.display = "none";
-// }
-
 span.onclick = function() {
   modalPopup.style.display = "none";
 }
@@ -112,10 +103,10 @@ window.onclick = function(event) {
   }
 }
 
-// function removeModal() {
-//   let Modal = document.querySelector('myModal');
-//   Modal.remove('myModal');
-// }
+// Попап без окна формы заказа
+
+
+
 
 // Стилизация select
 

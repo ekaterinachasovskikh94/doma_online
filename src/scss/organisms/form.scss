@@ -23,6 +23,14 @@
   display: flex;
   justify-content: center;
 }
+
+.o-form__button-holder_left {
+  display: flex;
+  justify-content: flex-start;
+  @media(max-width: 768px) {
+       justify-content: center;
+   }
+}
 .o-form__button {
   @include button-main-medium;
   .o-footer__form-holder &{

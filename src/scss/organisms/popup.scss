@@ -3,13 +3,19 @@
   max-width: 658px;
   background-color: $white;
   margin: auto;
-  height: 562px;
+  // height: 448px;
+  padding-top: 40px;
     @media(max-width: 568px) {
     height: 100%;
   }
 }
 .o-popup__content {
-  padding: 56px 116px;
+  // padding: 56px 116px;
+      padding-top: 112px;
+    padding-bottom: 152px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media(max-width: 568px) {
     padding: 44px 32px;
   }
@@ -17,4 +23,8 @@
 
 .o-popup__text {
   @include font-text-lato-bold-small ;
+  padding-bottom: 16px;
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
