@@ -211,7 +211,8 @@ button {
     display: none; }
 
 .o-header__logo-img {
-  display: block; }
+  display: block;
+  max-width: 260px; }
   @media (max-width: 568px) {
     .o-header__logo-img {
       display: none; } }
@@ -580,6 +581,13 @@ label[for="tab-3"].o-tab__title {
   position: relative;
   z-index: 1; }
 
+.o-tab__content-desc-text_action {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1;
+  color: #71B02D; }
+
 .o-tab__content-action {
   position: relative;
   z-index: 0;
@@ -615,8 +623,7 @@ label[for="tab-3"].o-tab__title {
 
 .o-tab__form-holder {
   max-width: 482px;
-  border: 1px solid #71B02D;
-  padding: 48px 24px; }
+  padding: 0px 24px; }
   @media (max-width: 1000px) {
     .o-tab__form-holder {
       width: 240px; } }
@@ -715,6 +722,19 @@ label[for="tab-double-3"].o-tab__title {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.o-form__button-holder_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  @media (max-width: 768px) {
+    .o-form__button-holder_left {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
 .o-form__button {
   border: 1px solid #71B02D;
   min-width: 200px;
@@ -722,7 +742,8 @@ label[for="tab-double-3"].o-tab__title {
   background: #71B02D;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 8px;
+  padding: 8px 16px;
+  height: 24px;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
@@ -874,13 +895,25 @@ label[for="confirmationInfoContact"].o-form__label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: 1px solid #71B02D;
-  padding: 32px; }
+  padding: 48px 32px; }
+
+.o-offer__list {
+  padding-left: 20px;
+  min-height: 130px;
+  margin: 0; }
+
+.o-offer__list-item {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1;
+  padding-bottom: 16px; }
+  .o-offer__list-item:last-child {
+    padding-bottom: 0; }
 
 .o-offer__name {
+  text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
@@ -888,13 +921,15 @@ label[for="confirmationInfoContact"].o-form__label {
   padding-bottom: 64px; }
 
 .o-offer__cost {
+  text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 3.125rem;
   line-height: 1;
-  padding-bottom: 100px; }
+  padding: 64px 0; }
 
 .o-offer__info {
+  text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
@@ -948,7 +983,6 @@ label[for="confirmationInfoContact"].o-form__label {
               flex-direction: column; } }
 
 .o-footer__block {
-  border: 1px solid #71B02D;
   padding: 32px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1018,7 +1052,7 @@ label[for="confirmationInfoContact"].o-form__label {
 .o-footer__title {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   line-height: 1;
   padding-bottom: 24px; }
   @media (max-width: 568px) {
@@ -1112,13 +1146,14 @@ p.o-footer__description {
   border: 1px solid #71B02D;
   max-width: 658px;
   background-color: #fff;
-  margin: auto; }
+  margin: auto;
+  padding-top: 40px; }
   @media (max-width: 568px) {
     .o-window {
       height: 100%; } }
 
 .o-window__form {
-  padding: 56px 116px; }
+  padding: 16px 56px 116px; }
   @media (max-width: 568px) {
     .o-window__form {
       padding: 44px 32px; } }
@@ -1127,7 +1162,6 @@ p.o-footer__description {
 .close {
   position: relative;
   left: calc(100% - 56px);
-  top: 16px;
   cursor: pointer;
   background: transparent;
   padding: 8px 16px; }
@@ -1155,7 +1189,6 @@ p.o-footer__description {
 .close-two {
   position: relative;
   left: calc(100% - 56px);
-  top: 16px;
   cursor: pointer;
   background: transparent;
   padding: 8px 16px; }
@@ -1185,13 +1218,24 @@ p.o-footer__description {
   max-width: 658px;
   background-color: #fff;
   margin: auto;
-  height: 562px; }
+  padding-top: 40px; }
   @media (max-width: 568px) {
     .o-popup {
       height: 100%; } }
 
 .o-popup__content {
-  padding: 56px 116px; }
+  padding-top: 112px;
+  padding-bottom: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (max-width: 568px) {
     .o-popup__content {
       padding: 44px 32px; } }
@@ -1200,7 +1244,10 @@ p.o-footer__description {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
-  line-height: 1; }
+  line-height: 1;
+  padding-bottom: 16px; }
+  .o-popup__text:last-child {
+    padding-bottom: 0; }
 
 .t-header {
   width: 100%;
@@ -1234,7 +1281,7 @@ p.o-footer__description {
   margin-bottom: 80px; }
   @media (max-width: 568px) {
     .t-section {
-      margin-bottom: 64px; } }
+      margin-bottom: 32px; } }
 
 .t-section_full {
   width: 100%;
@@ -1248,7 +1295,7 @@ p.o-footer__description {
 .t-section__title {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 48px;
@@ -1406,7 +1453,8 @@ h1.t-preview__title {
       background: #71B02D;
       -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      padding: 8px;
+      padding: 8px 16px;
+      height: 24px;
       color: #fff;
       cursor: pointer;
       text-decoration: none;
@@ -1446,7 +1494,7 @@ h1.t-preview__title {
           margin-bottom: 0; } }
 
 .t-tabs__holder_height {
-  min-height: 368px; }
+  min-height: 468px; }
 
 .t-about {
   width: 60%; }
@@ -1501,7 +1549,7 @@ h1.t-preview__title {
 .t-footer__title {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 48px; }
   @media (max-width: 568px) {
