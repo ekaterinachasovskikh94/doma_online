@@ -51,8 +51,36 @@ import { inherits } from "util";
     });
 })();
 
+// Попап без окна формы заказа
 
-// Окно формы заказа
+// // Get the modal
+// var modalPopupSingle = document.getElementById("myModalPopupSingle");
+
+// // Get the button that opens the modal
+// var btnPopupSingle = document.getElementById("myBtnPopupSingle");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("closePopupSingle")[0];
+
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   modalPopupSingle.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modalPopupSingle.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modalPopupSingle.style.display = "none";
+//   }
+// }
+
+
+// Модальное окно
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -80,11 +108,11 @@ window.onclick = function(event) {
   }
 }
 
-// Попап после окна формы заказа
+// Попап с окном формы заказа
 
 var modalPopup = document.getElementById("myPopup");
 
-var span = document.getElementsByClassName("close-two")[0];
+var span = document.getElementsByClassName("closePopup")[0];
 
 var btnPopup = document.getElementById("myBtnPopup");
 
@@ -103,8 +131,10 @@ window.onclick = function(event) {
   }
 }
 
-// Попап без окна формы заказа
-
+// function removeModal() {
+//   let Modal = document.querySelector('myModal');
+//   Modal.remove('myModal');
+// }
 
 
 

@@ -26,6 +26,7 @@
 .o-offer__cost {
   text-align: center;
   @include font-name-cost-lato;
+  color: $main-color;
 padding: 64px 0;
 }
 
