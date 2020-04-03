@@ -43,6 +43,13 @@ height: 24px;
     // margin-left: 32px;
   }
 }
+
+.o-form__label-link {
+  color: $main-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
  .o-form__group_checked {
   margin-bottom: 40px;
                @media(max-width: 768px) {
@@ -107,7 +114,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
  label[for="confirmationInfo"] {
      &.o-form__label {
        vertical-align: middle;
-       @include  font-text-lato-small;
+       @include  font-text-lato;
          &:before {
     content: '';
     position: relative;
@@ -118,6 +125,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
     background-color: $white;
     vertical-align: middle;
     margin-right: 16px;
+        margin-top: 6px;
     // right: calc(34% - 4px);
          }
      }
@@ -136,7 +144,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
  label[for="confirmationInfo-ref"] {
      &.o-form__label {
        vertical-align: middle;
-       @include  font-text-lato-small;
+       @include  font-text-lato;
          &:before {
     content: '';
     position: relative;
@@ -147,6 +155,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
     background-color: $white;
     vertical-align: middle;
     margin-right: 16px;
+        margin-top: 6px;
     // right: calc(34% - 4px);
          }
      }
@@ -165,7 +174,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
  label[for="confirmationInfo-mat"] {
      &.o-form__label {
        vertical-align: middle;
-       @include  font-text-lato-small;
+       @include  font-text-lato;
          &:before {
     content: '';
     position: relative;
@@ -176,6 +185,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
     background-color: $white;
     vertical-align: middle;
     margin-right: 16px;
+        margin-top: 6px;
     // right: calc(34% - 4px);
          }
      }
@@ -194,7 +204,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
  label[for="confirmationInfoContact"] {
      &.o-form__label {
        vertical-align: middle;
-       @include  font-text-lato-small;
+       @include  font-text-lato;
          &:before {
     content: '';
     position: relative;

@@ -1,0 +1,7 @@
+.o-agreement {
+  @include font-text-lato-action-small;
+  line-height: 1.4;
+    @media(max-width: 768px) {
+      @include font-text-lato;
+   }
+}
