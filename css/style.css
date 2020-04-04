@@ -1594,7 +1594,8 @@ p.o-footer__description {
               flex-direction: column; } }
   @media (max-width: 568px) {
     .t-preview {
-      margin-top: 0; } }
+      margin-top: 0;
+      padding-top: 20px; } }
 
 .t-preview__holder {
   display: -webkit-box;
