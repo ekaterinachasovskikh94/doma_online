@@ -123,6 +123,29 @@
 
 </section>
 
+<section class="t-section">
+  <div class="t-advantages">
+    <div class="o-advantages">
+      <div class="o-advantage">
+        <img src="img/icon-forum.svg" alt="сервис" class="o-advantage__img">
+        <span class="o-advantage__description">Современный сервис</span>
+      </div>
+       <div class="o-advantage">
+        <img src="img/icon-child.svg" alt="материнский капитал" class="o-advantage__img">
+        <span class="o-advantage__description">Квалифицированное сопровождение по вопросам оформления материнского капитала</span>
+      </div>
+       <div class="o-advantage">
+        <img src="img/icon-doc.svg" alt="оформление недвижимости" class="o-advantage__img">
+        <span class="o-advantage__description">Юридическое оформление недвижимости с выделением долей несовершеннолетним</span>
+      </div>
+       <div class="o-advantage">
+        <img src="img/icon-home.svg" alt="ипотека" class="o-advantage__img">
+        <span class="o-advantage__description">Комплексное решение вопросов по ипотеке</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="service" name="service" class="t-section">
   <h2 class="t-section__title">Услуги</h2>
   <div class="t-tabs">
@@ -216,7 +239,7 @@
 
     <div class="t-popup" id="myPopupRef">
         <div class="o-popup">
-          <span class="closePopup"></span>
+          <span class="closePopupRef"></span>
             <div class="o-popup__content">
               <span class="o-popup__text">Благодарим Вас за обращение!</span>
                <span class="o-popup__text">Наши специалисты свяжутся с</span>
@@ -225,18 +248,18 @@
         </div>
     </div>
 
-          <div class="o-tab">
-              <input type="radio" name="info-tabs" id="tab-3" class="o-tab__switch">
+    <div class="o-tab">
+       <input type="radio" name="info-tabs" id="tab-3" class="o-tab__switch">
       <label for="tab-3" class="o-tab__title">Материнский капитал</label>
         <div class="o-tab__block">
-        <div class="o-tab__content o-tab__content-action o-tab__content-action_child">
-              <p class="o-tab__content-text">
-            Мы поможем грамотно распорядиться материнским капиталом для приобретения жилья и избежать юридических проблем при его дальнейшей продаже.</p>
-            <p class="o-tab__content-text">
-            Все семьи, в которых первенец рожден или усыновлен начиная с 1 января 2020 года, получили право на&nbsp;материнский капитал в размере 466 617 рублей.</p>
-            <p class="o-tab__content-text">Для семей, в которых с 2020 года появился второй ребенок, материнский капитал составляет 616&nbsp;617&nbsp;рублей.</p>
-            <p class="o-tab__content-text">Такая же сумма полагается за третьего,<br> четвертого и любого следующего ребенка,<br>  рожденного или усыновленного с 2020 года,<br> если раньше у семьи не было права на материнский&nbsp;капитал.</p>
-        </div>
+          <div class="o-tab__content o-tab__content-action o-tab__content-action_child">
+                  <p class="o-tab__content-text">
+                Мы поможем грамотно распорядиться материнским капиталом для приобретения жилья и избежать юридических проблем при его дальнейшей продаже.</p>
+                <p class="o-tab__content-text">
+                Все семьи, в которых первенец рожден или усыновлен начиная с 1 января 2020 года, получили право на&nbsp;материнский капитал в размере 466 617 рублей.</p>
+                <p class="o-tab__content-text">Для семей, в которых с 2020 года появился второй ребенок, материнский капитал составляет 616&nbsp;617&nbsp;рублей.</p>
+                <p class="o-tab__content-text">Такая же сумма полагается за третьего,<br> четвертого и любого следующего ребенка,<br>  рожденного или усыновленного с 2020 года,<br> если раньше у семьи не было права на материнский&nbsp;капитал.</p>
+            </div>
           <div class="o-tab__form">
             <div class="o-tab__form-holder">
               <div class="o-form__group">
@@ -260,10 +283,21 @@
                  <label class="o-form__label" for="confirmationInfo-mat"><span class="o-form__label-text">я соглашаюсь с <a href="agreement.html" target="_blank" class="o-form__label-link">условиями использования&nbsp;персональных данных.</a></span></label>
               </div>
               <div class="o-form__button-holder">
-              <a href="err404.html" class="o-form__button" >Подать заявку</a>
+              <a href="#" class="o-form__button" id="myBtnPopupMat">Подать заявку</a>
               </div>
             </div>
           </div>
+        </div>
+    </div>
+
+        <div class="t-popup" id="myPopupMat">
+        <div class="o-popup">
+          <span class="closePopupMat"></span>
+            <div class="o-popup__content">
+              <span class="o-popup__text">Благодарим Вас за обращение!</span>
+               <span class="o-popup__text">Наши специалисты свяжутся с</span>
+                <span class="o-popup__text">Вами в ближайшее время!</span>
+            </div>
         </div>
     </div>
     </div>
@@ -290,13 +324,63 @@
                  </p>
              </div>
         <div class="o-form__button-holder o-form__button-holder_left">
-        <a href="" class="o-form__button">Подать заявку</a>
+        <a href="#" class="o-form__button" id="myBtnFam">Подать заявку</a>
         </div>
        </div>
        <div class="o-tab__content__image-holder">
          <img src="img/preview--form-4.png" alt="самолёт" class="o-tab__content__image">
        </div>
     </div>
+    </div>
+   <div class="t-window" id="myModalFam">
+    <div class="o-window">
+      <span class="closeFam"></span>
+      <div class="o-window__form">
+           <div class="o-form__group">
+            <div class="o-form__custom-select">
+                <label class="o-form__label" for="name">Тип обращения</label>
+                <select>
+                    <option value="0">Семейная ипотека</option>
+                    <option value="1">Рефинансирование</option>
+                    <option value="2">Материнский капитал</option>
+                    <option value="3" selected>Программа Молодая семья</option>
+                    <option value="4">Программма поддержки семей с детьми</option>
+                    <option value="5">Военная ипотека</option>
+                <select>
+            </div>
+          </div>
+            <div class="o-form__group">
+              <label class="o-form__label" for="name">ФИО</label>
+              <input class="o-form__input" type="name" placeholder="ФИО" id="dynamic-label-input" >
+            </div>
+            <div class="o-form__group">
+              <label class="o-form__label" for="tel" >Телефон</label>
+              <input class="o-form__input" type="tel" name="phone"  name="phone" data-mask="+7(___)___-____" value="" placeholder="" required>
+            </div>
+            <div class="o-form__group">
+              <label class="o-form__label" for="email" required>E-mail</label>
+              <input class="o-form__input" type="email" id="dynamic-label-input">
+            </div>
+             <div class="o-form__group">
+              <label class="o-form__label" for="name">Город</label>
+              <input class="o-form__input" type="text" id="dynamic-label-input" >
+            </div>
+            <div class="o-form__button-holder">
+            <a href="#" class="o-form__button" id="myBtnPopupFam">Подать заявку</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="t-popup" id="myPopupFam">
+        <div class="o-popup">
+          <span class="closePopupFam"></span>
+            <div class="o-popup__content">
+              <span class="o-popup__text">Благодарим Вас за обращение!</span>
+               <span class="o-popup__text">Наши специалисты свяжутся с</span>
+                <span class="o-popup__text">Вами в ближайшее время!</span>
+            </div>
+        </div>
     </div>
     <div class="o-tab">
       <input type="radio" name="info-double-tabs" id="tab-double-2" class="o-tab__switch">

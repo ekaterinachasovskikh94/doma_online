@@ -193,6 +193,7 @@ button {
   width: 100%; }
   @media (max-width: 1097px) {
     .o-header {
+      padding: 24px 0;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
@@ -1271,6 +1272,33 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
 
+.closeFam {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closeFam:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closeFam:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
 .o-popup {
   border: 1px solid #71B02D;
   max-width: 658px;
@@ -1334,6 +1362,87 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
 
+.closePopupRef {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closePopupRef:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closePopupRef:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closePopupMat {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closePopupMat:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closePopupMat:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closePopupFam {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closePopupFam:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closePopupFam:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
 .o-agreement {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
@@ -1346,6 +1455,58 @@ p.o-footer__description {
       font-weight: normal;
       font-size: 1rem;
       line-height: 1; } }
+
+.o-advantages {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: (minmax(240px, 1fr))[4];
+  grid-template-columns: repeat(4, minmax(240px, 1fr)); }
+  @media (max-width: 1090px) {
+    .o-advantages {
+      display: -ms-grid;
+      display: grid;
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      -ms-grid-columns: (minmax(240px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(240px, 1fr)); } }
+  @media (max-width: 568px) {
+    .o-advantages {
+      display: -ms-grid;
+      display: grid;
+      grid-column-gap: 16px;
+      grid-row-gap: 32px;
+      -ms-grid-columns: (minmax(240px, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(240px, 1fr)); } }
+
+.o-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.o-advantage__img {
+  padding-bottom: 40px;
+  width: 72px;
+  height: 72px; }
+  @media (max-width: 568px) {
+    .o-advantage__img {
+      padding-bottom: 20px;
+      width: 48px;
+      height: 48px; } }
+
+.o-advantage__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center; }
 
 .t-header {
   width: 100%;
