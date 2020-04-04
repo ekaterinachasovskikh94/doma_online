@@ -38,7 +38,6 @@ import { inherits } from "util";
 
     // turn active state on or off
     btn.onclick = function(e) {
-        console.log('aga');
         toggleState('.j-nav-toggle', 'data-state', 'off', 'on');
         toggleState('.btn-wrapper', 'aria-pressed', 'false', 'true');
         e.preventDefault();
@@ -131,11 +130,25 @@ window.onclick = function(event) {
   }
 }
 
-// function removeModal() {
-//   let Modal = document.querySelector('myModal');
-//   Modal.remove('myModal');
-// }
+var modalPopupRef = document.getElementById("myPopupRef");
 
+var btnPopupRef = document.getElementById("myBtnPopupRef");
+
+var span = document.getElementsByClassName("closePopupRef")[0];
+
+document.getElementById('myBtnPopupRef').onclick = function() {
+  modalPopupRef.style.display = "block";
+}
+
+span.onclick = function() {
+  modalPopupRef.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalPopup) {
+    modalPopupRef.style.display = "none";
+  }
+}
 
 
 // Стилизация select

@@ -135,6 +135,9 @@ transition: none;
 .o-tab__content {
 width: calc(60% - 16px);
   @include font-text-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &>* {
     margin-bottom: 32px;
   }
