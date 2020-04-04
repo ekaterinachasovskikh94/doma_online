@@ -1,0 +1,29 @@
+.o-advantages {
+  @include grid(16px, 16px, 4, 240px, 0);
+     @media(max-width: 1090px) {
+      @include grid(16px, 16px, 2, 240px, 0);
+  }
+       @media(max-width: 568px) {
+      @include grid(16px, 32px, 1, 240px, 0);
+  }
+}
+
+.o-advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.o-advantage__img {
+  padding-bottom: 40px;
+  width: 72px;
+  height: 72px;
+  @media(max-width: 568px) {
+    padding-bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+}
+.o-advantage__description {
+  @include font-text;
+  text-align: center;
+}

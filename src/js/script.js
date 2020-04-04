@@ -130,6 +130,8 @@ window.onclick = function(event) {
   }
 }
 
+// рефенсирование
+
 var modalPopupRef = document.getElementById("myPopupRef");
 
 var btnPopupRef = document.getElementById("myBtnPopupRef");
@@ -150,6 +152,78 @@ window.onclick = function(event) {
   }
 }
 
+// материнский капитал
+
+var modalPopupMat = document.getElementById("myPopupMat");
+
+var btnPopupMat = document.getElementById("myBtnPopupMat");
+
+var span = document.getElementsByClassName("closePopupMat")[0];
+
+document.getElementById('myBtnPopupMat').onclick = function() {
+  modalPopupMat.style.display = "block";
+}
+
+span.onclick = function() {
+  modalPopupMat.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalPopup) {
+    modalPopupMat.style.display = "none";
+  }
+}
+
+// // Модальное окно Программа Молодая семья
+
+// // Get the modal
+// var modalFam = document.getElementById("myModalFam");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("closeFam")[0];
+
+// // Get the button that opens the modal
+// var btnFam = document.getElementById("myBtnFam");
+
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   modalFam.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modalFam.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modalFam.style.display = "none";
+//   }
+// }
+
+// // Попап с окном формы заказа Молодая семья
+
+// var modalPopupFam = document.getElementById("myPopupFam");
+
+// var spanFam = document.getElementsByClassName("closePopupFam")[0];
+
+// var btnPopupFam = document.getElementById("myBtnPopupFam");
+
+// document.getElementById('myBtnPopupFam').onclick = function() {
+//   modalPopupFam.style.display = "block";
+//   modalFam.style.display = "none";
+// }
+
+// span.onclick = function() {
+//   modalPopupFam.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+//   if (event.target == modalPopupFam) {
+//     modalPopupFam.style.display = "none";
+//   }
+// }
 
 // Стилизация select
 

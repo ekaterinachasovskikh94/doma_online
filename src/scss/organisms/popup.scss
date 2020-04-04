@@ -30,32 +30,14 @@
 }
 
 .closePopup{
-position: relative;
-    left: calc(100% - 56px);
-    // top: 16px;
-    cursor: pointer;
-  background: transparent;
-      padding: 8px 16px;
-  &:before {
-    content: '';
-    position: absolute;
-        bottom: 0;
-    top: 0;
-    transform: rotate(-45deg);
-    background: $grey;
-    width: 4px;
-    height: 36px;
-
-  }
-  &:after {
-        content: '';
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    transform: rotate(45deg);
-    background: $grey;
-        width: 4px;
-    height: 36px;
-  }
+@include close;
 }
-
+.closePopupRef{
+  @include close;
+}
+.closePopupMat{
+  @include close;
+}
+.closePopupFam{
+  @include close;
+}
