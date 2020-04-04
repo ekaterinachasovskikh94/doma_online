@@ -183,7 +183,7 @@ button {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .o-header {
-  padding: 64px 0;
+  padding: 56px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,7 +539,17 @@ label[for="tab-3"].o-tab__title {
   width: calc(60% - 16px);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (max-width: 568px) {
     .o-tab__content {
       font-size: 1rem; } }
@@ -945,14 +955,33 @@ label[for="confirmationInfoContact"].o-form__label {
 .o-offer__list {
   padding-left: 20px;
   min-height: 130px;
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .o-offer__list-item {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1;
-  padding-bottom: 16px; }
+  list-style-position: inside;
+  padding-bottom: 16px;
+  position: relative;
+  display: inline-block; }
+  .o-offer__list-item:before {
+    content: '';
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M5.50785 10.7547L5.63643 10.921L5.76501 10.7547L8.49228 7.22528L13.0377 1.3429L13.5623 0.664024L13.8996 0.445805L14.2248 0.235352H14.3637H14.5026L14.8014 0.428728L15.5078 1.3429L15.6688 1.5512L15.8182 1.93795V2.353V2.53275L15.6556 2.95365L15.487 3.39009L14.2351 5.01013L10.5988 9.71601L10.0533 10.4219L7.32603 13.9513L6.07418 15.5714L5.77534 15.7648H5.49752L5.19599 15.5697L2.30838 12.0663L1.94681 11.5984L0.513132 9.74302L0.344508 9.3066L0.181885 8.8857V8.70594V8.47065V8.09752L0.492267 7.69587L0.855903 7.22528L1.19868 6.78166L1.49753 6.58829H1.81825H2.00007H2.13896L2.43782 6.78166L2.78059 7.22528L4.78058 9.81352L5.32603 10.5194L5.50785 10.7547Z' fill='%2371B02D' stroke='%2371B02D'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    left: -24px;
+    vertical-align: middle; }
   .o-offer__list-item:last-child {
     padding-bottom: 0; }
 
@@ -1295,33 +1324,6 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
   .closePopup:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    background: #aaaaaa;
-    width: 4px;
-    height: 36px; }
-
-.closePopupSingle {
-  position: relative;
-  left: calc(100% - 56px);
-  cursor: pointer;
-  background: transparent;
-  padding: 8px 16px; }
-  .closePopupSingle:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    background: #aaaaaa;
-    width: 4px;
-    height: 36px; }
-  .closePopupSingle:after {
     content: '';
     position: absolute;
     bottom: 0;
