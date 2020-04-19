@@ -1416,6 +1416,33 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
 
+.closeFam {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closeFam:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closeFam:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
 .closePopupFam {
   position: relative;
   left: calc(100% - 56px);
@@ -1433,6 +1460,60 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
   .closePopupFam:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closeGos {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closeGos:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closeGos:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closePopupGos {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closePopupGos:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closePopupGos:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1577,7 +1658,7 @@ p.o-footer__description {
     display: none; } }
 
 .t-preview {
-  margin-top: 80px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
