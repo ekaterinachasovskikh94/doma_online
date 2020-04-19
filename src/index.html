@@ -88,7 +88,7 @@
           </div>
             <div class="o-form__group">
               <label class="o-form__label" for="name">ФИО</label>
-              <input class="o-form__input" type="name" placeholder="ФИО" id="dynamic-label-input" >
+              <input class="o-form__input" type="name" placeholder="ФИО" id="dynamic-label-input" required>
             </div>
             <div class="o-form__group">
               <label class="o-form__label" for="tel" >Телефон</label>
@@ -96,11 +96,11 @@
             </div>
             <div class="o-form__group">
               <label class="o-form__label" for="email" required>E-mail</label>
-              <input class="o-form__input" type="email" id="dynamic-label-input">
+              <input class="o-form__input" type="email" name="email" id="dynamic-label-input" required>
             </div>
              <div class="o-form__group">
               <label class="o-form__label" for="name">Город</label>
-              <input class="o-form__input" type="text" id="dynamic-label-input" >
+              <input class="o-form__input" type="text" id="dynamic-label-input" required>
             </div>
             <div class="o-form__button-holder">
             <a href="#" class="o-form__button" id="myBtnPopup">Подать заявку</a>
@@ -176,7 +176,7 @@
               </div>
               <div class="o-form__group">
                 <label class="o-form__label" for="email" required>E-mail</label>
-                <input class="o-form__input" type="email" id="dynamic-label-input">
+                <input class="o-form__input" type="email" name="email"  id="dynamic-label-input">
               </div>
                <div class="o-form__group">
                 <label class="o-form__label" for="name">Город</label>
@@ -219,7 +219,7 @@
               </div>
               <div class="o-form__group">
                 <label class="o-form__label" for="email" required>E-mail</label>
-                <input class="o-form__input" type="email" id="dynamic-label-input">
+                <input class="o-form__input" type="email" name="email"  id="dynamic-label-input">
               </div>
                <div class="o-form__group">
                 <label class="o-form__label" for="name">Город</label>
@@ -272,7 +272,7 @@
               </div>
               <div class="o-form__group">
                 <label class="o-form__label" for="email" required>E-mail</label>
-                <input class="o-form__input" type="email" id="dynamic-label-input">
+                <input class="o-form__input" type="email" name="email"  id="dynamic-label-input">
               </div>
                <div class="o-form__group">
                 <label class="o-form__label" for="name">Город</label>
@@ -324,7 +324,7 @@
                  </p>
              </div>
         <div class="o-form__button-holder o-form__button-holder_left">
-        <a href="#" class="o-form__button" id="myBtnPopupFam">Подать заявку</a>
+        <a href="#" class="o-form__button" id="myBtnModalFam">Подать заявку</a>
         </div>
        </div>
        <div class="o-tab__content__image-holder">
@@ -332,7 +332,7 @@
        </div>
     </div>
     </div>
-      <!-- <div class="t-window" id="myModalFam">
+      <div class="t-window" id="myModalFam">
         <div class="o-window">
           <span class="closeFam"></span>
           <div class="o-window__form">
@@ -370,7 +370,7 @@
                 </div>
             </div>
         </div>
-      </div> -->
+      </div>
         <div class="t-popup" id="myPopupFam">
           <div class="o-popup">
             <span class="closePopupFam"></span>
@@ -396,7 +396,7 @@
                  </p>
              </div>
                      <div class="o-form__button-holder o-form__button-holder_left">
-        <a href="" class="o-form__button">Подать заявку</a>
+        <a href="#" class="o-form__button" id="myBtnModalFam">Подать заявку</a>
         </div>
       </div>
        <div class="o-tab__content__image-holder">
@@ -404,6 +404,56 @@
        </div>
     </div>
     </div>
+
+      <div class="t-window" id="myModalGos">
+        <div class="o-window">
+          <span class="closeGos"></span>
+          <div class="o-window__form">
+               <div class="o-form__group">
+                <div class="o-form__custom-select">
+                    <label class="o-form__label" for="name">Тип обращения</label>
+                    <select>
+                        <option value="0">Семейная ипотека</option>
+                        <option value="1">Рефинансирование</option>
+                        <option value="2">Материнский капитал</option>
+                        <option value="3">Программа Молодая семья</option>
+                        <option value="4">Программма поддержки семей с детьми</option>
+                        <option value="5">Военная ипотека</option>
+                    <select>
+                </div>
+              </div>
+                <div class="o-form__group">
+                  <label class="o-form__label" for="name">ФИО</label>
+                  <input class="o-form__input" type="name" placeholder="ФИО" id="dynamic-label-input" >
+                </div>
+                <div class="o-form__group">
+                  <label class="o-form__label" for="tel" >Телефон</label>
+                  <input class="o-form__input" type="tel" name="phone"  name="phone" data-mask="+7(___)___-____" value="" placeholder="" required>
+                </div>
+                <div class="o-form__group">
+                  <label class="o-form__label" for="email" required>E-mail</label>
+                  <input class="o-form__input" type="email" id="dynamic-label-input">
+                </div>
+                 <div class="o-form__group">
+                  <label class="o-form__label" for="name">Город</label>
+                  <input class="o-form__input" type="text" id="dynamic-label-input" >
+                </div>
+                <div class="o-form__button-holder">
+                <a href="#" class="o-form__button" id="myBtnPopupGos">Подать заявку</a>
+                </div>
+            </div>
+        </div>
+      </div>
+        <div class="t-popup" id="myPopupGos">
+          <div class="o-popup">
+            <span class="closePopupGos"></span>
+              <div class="o-popup__content">
+                <span class="o-popup__text">Благодарим Вас за обращение!</span>
+                 <span class="o-popup__text">Наши специалисты свяжутся с</span>
+                  <span class="o-popup__text">Вами в ближайшее время!</span>
+              </div>
+          </div>
+      </div>
 
     <div class="o-tab">
       <input type="radio" name="info-double-tabs" id="tab-double-3" class="o-tab__switch">
@@ -418,7 +468,7 @@
                  </p>
              </div>
                      <div class="o-form__button-holder o-form__button-holder_left">
-        <a href="" class="o-form__button">Подать заявку</a>
+        <a href="" class="o-form__button" id="myBtnModalFam">Подать заявку</a>
         </div>
       </div>
              <div class="o-tab__content__image-holder">

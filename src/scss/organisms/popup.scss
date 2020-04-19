@@ -38,6 +38,15 @@
 .closePopupMat{
   @include close;
 }
+.closeFam {
+  @include close;
+}
 .closePopupFam{
+  @include close;
+}
+.closeGos {
+  @include close;
+}
+.closePopupGos{
   @include close;
 }

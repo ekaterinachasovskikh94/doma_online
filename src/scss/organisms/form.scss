@@ -219,3 +219,11 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
          }
      }
  }
+
+// input:invalid {
+//   border: 2px solid $red;
+// }
+
+// input:focus:invalid {
+//   box-shadow: none;
+// }
