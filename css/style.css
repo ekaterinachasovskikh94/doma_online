@@ -760,6 +760,9 @@ label[for="tab-double-3"].o-tab__title {
     @media (max-width: 768px) {
       .o-footer__form-holder .o-form__group {
         width: auto; } }
+  .o-window .o-form__group {
+    margin: 24px auto;
+    max-width: 420px; }
 
 .o-form__button-holder {
   display: -webkit-box;
@@ -909,6 +912,30 @@ label[for="confirmationInfo-mat"].o-form__label {
   font-size: 1rem;
   line-height: 1; }
   label[for="confirmationInfo-mat"].o-form__label:before {
+    content: '';
+    position: relative;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #71B02D;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 16px;
+    margin-top: 6px; }
+
+input[type="checkbox"]:checked.o-form__checkbox + label[for="confirmationInfoFam"]:before {
+  content: '\2713';
+  color: #71B02D;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center; }
+
+label[for="confirmationInfoFam"].o-form__label {
+  vertical-align: middle;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1; }
+  label[for="confirmationInfoFam"].o-form__label:before {
     content: '';
     position: relative;
     min-width: 20px;
@@ -1233,16 +1260,10 @@ p.o-footer__description {
   max-width: 658px;
   background-color: #fff;
   margin: auto;
-  padding-top: 40px; }
+  padding: 32px; }
   @media (max-width: 568px) {
     .o-window {
       height: 100%; } }
-
-.o-window__form {
-  padding: 16px 56px 116px; }
-  @media (max-width: 568px) {
-    .o-window__form {
-      padding: 44px 32px; } }
 
 /* Modal Content */
 .close {
@@ -1944,7 +1965,7 @@ h1.t-preview__title {
   /* Stay in place */
   z-index: 12;
   /* Sit on top */
-  padding-top: 40px;
+  padding-top: 20px;
   /* Location of the box */
   left: 0;
   top: 0;
