@@ -3,15 +3,16 @@
   max-width: 658px;
   background-color: $white;
   margin: auto;
-  padding-top: 40px;
+  // padding-top: 40px;
+  padding: 32px;
     @media(max-width: 568px) {
     height: 100%;
   }
 }
 .o-window__form {
-  padding: 16px 56px 116px;
+  // padding: 16px 56px 116px;
   @media(max-width: 568px) {
-    padding: 44px 32px;
+    // padding: 44px 32px;
   }
 }
 

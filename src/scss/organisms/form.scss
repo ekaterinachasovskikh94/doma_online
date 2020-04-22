@@ -17,6 +17,10 @@
 
       }
   }
+    .o-window & {
+        margin: 24px auto;
+        max-width: 420px;
+    }
 }
 
 .o-form__button-holder {
@@ -172,6 +176,36 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
  }
 
  label[for="confirmationInfo-mat"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato;
+         &:before {
+    content: '';
+    position: relative;
+    
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    margin-right: 16px;
+        margin-top: 6px;
+    // right: calc(34% - 4px);
+         }
+     }
+ }
+   input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfoFam"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfoFam"] {
      &.o-form__label {
        vertical-align: middle;
        @include  font-text-lato;
