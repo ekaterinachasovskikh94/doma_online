@@ -224,6 +224,67 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
          }
      }
  }
+    input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfoMilitary"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfoMilitary"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato;
+         &:before {
+    content: '';
+    position: relative;
+    
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    margin-right: 16px;
+        margin-top: 6px;
+    // right: calc(34% - 4px);
+         }
+     }
+ }
+
+     input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfoGos"] {
+     &:before {
+         content: '\2713';
+         color: $main-color;
+         font-size: 20px;
+         line-height: 1;
+         text-align: center;
+     }
+
+ }
+
+ label[for="confirmationInfoGos"] {
+     &.o-form__label {
+       vertical-align: middle;
+       @include  font-text-lato;
+         &:before {
+    content: '';
+    position: relative;
+    
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    background-color: $white;
+    vertical-align: middle;
+    margin-right: 16px;
+        margin-top: 6px;
+    // right: calc(34% - 4px);
+         }
+     }
+ }
  input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfoContact"] {
      &:before {
          content: '\2713';

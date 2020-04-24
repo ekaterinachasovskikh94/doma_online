@@ -1,14 +1,3 @@
-// var burgerMenu = document.querySelectorAll('.t-header');
-//         for (var i = 0, j = burgerMenu.length; i < j; i++) {
-//             burgerMenu[i].addEventListener('click', function(e) {
-//                 if (hasClass(e.target, 'j-m-burger')) {
-//                     this.querySelector('.j-mobile-nav').classList.toggle('o-header__menu_visible ');
-//                     this.querySelector('.j-mobile-nav').classList.toggle('o-header__menu_hidden');
-//                     document.querySelector('body').classList.toggle('a-body_static');
-//                 }
-//             })
-//     }
-
 // Подключение бургера
 
 import $ from 'jquery';
@@ -20,9 +9,6 @@ import { inherits } from "util";
     var btnBurger = $('.j-nav-toggle');
     var mainNav = $('.j-nav-toggle');
     var isShown = false;
-
-
-
 
     // Method to change states which works in IE7+ / IE8+
     var btn = document.querySelector('.j-nav-toggle');
@@ -107,33 +93,63 @@ window.onclick = function(event) {
   }
 }
 
-// Программа поддержки семей с детьми
+// Поддержка семьи
 
-// // Get the modal
-// var modal = document.getElementById("myModalGos");
+// Get the modal
+var modal = document.getElementById("myModalGos");
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtnModalGos");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtnModalGos");
 
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("closeGos")[0];
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeGos")[0];
 
-// // When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Военная ипотека
+
+// Get the modal
+var modal = document.getElementById("myModalMilitary");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtnModalMilitary");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeMilitary")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 
 // Попап с окном формы заказа
 
@@ -228,26 +244,50 @@ window.onclick = function(event) {
 
 // Программа поддержки семей с детьми
 
-// var modalPopupGos = document.getElementById("myPopupGos");
+var modalPopupGos = document.getElementById("myPopupGos");
 
-// var btnPopupGos = document.getElementById("myBtnPopupGos");
+var btnPopupGos = document.getElementById("myBtnPopupGos");
 
-// var span = document.getElementsByClassName("closePopupGos")[0];
+var span = document.getElementsByClassName("closePopupGos")[0];
 
-// document.getElementById('myBtnPopupGos').onclick = function() {
-//   modalPopupGos.style.display = "block";
-//   modal.style.display = "none";
-// }
+document.getElementById('myBtnPopupGos').onclick = function() {
+  modalPopupGos.style.display = "block";
+  modal.style.display = "none";
+}
 
-// span.onclick = function() {
-//   modalPopupGos.style.display = "none";
-// }
+span.onclick = function() {
+  modalPopupGos.style.display = "none";
+}
 
-// window.onclick = function(event) {
-//   if (event.target == modalPopupGos) {
-//     modalPopupGos.style.display = "none";
-//   }
-// }
+window.onclick = function(event) {
+  if (event.target == modalPopupGos) {
+    modalPopupGos.style.display = "none";
+  }
+}
+
+
+// Военная ипотека
+
+var modalPopupMilitary = document.getElementById("myPopupMilitary");
+
+var btnPopupMilitary = document.getElementById("myBtnPopupMilitary");
+
+var span = document.getElementsByClassName("closePopupMilitary")[0];
+
+document.getElementById('myBtnPopupMilitary').onclick = function() {
+  modalPopupMilitary.style.display = "block";
+  modal.style.display = "none";
+}
+
+span.onclick = function() {
+  modalPopupMilitary.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalPopupMilitary) {
+    modalPopupMilitary.style.display = "none";
+  }
+}
 
 
 // Стилизация select
