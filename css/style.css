@@ -946,6 +946,54 @@ label[for="confirmationInfoFam"].o-form__label {
     margin-right: 16px;
     margin-top: 6px; }
 
+input[type="checkbox"]:checked.o-form__checkbox + label[for="confirmationInfoMilitary"]:before {
+  content: '\2713';
+  color: #71B02D;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center; }
+
+label[for="confirmationInfoMilitary"].o-form__label {
+  vertical-align: middle;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1; }
+  label[for="confirmationInfoMilitary"].o-form__label:before {
+    content: '';
+    position: relative;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #71B02D;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 16px;
+    margin-top: 6px; }
+
+input[type="checkbox"]:checked.o-form__checkbox + label[for="confirmationInfoGos"]:before {
+  content: '\2713';
+  color: #71B02D;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center; }
+
+label[for="confirmationInfoGos"].o-form__label {
+  vertical-align: middle;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1; }
+  label[for="confirmationInfoGos"].o-form__label:before {
+    content: '';
+    position: relative;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #71B02D;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 16px;
+    margin-top: 6px; }
+
 input[type="checkbox"]:checked.o-form__checkbox + label[for="confirmationInfoContact"]:before {
   content: '\2713';
   color: #71B02D;
@@ -1535,6 +1583,60 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
   .closePopupGos:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closeMilitary {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closeMilitary:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closeMilitary:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closePopupMilitary {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closePopupMilitary:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closePopupMilitary:after {
     content: '';
     position: absolute;
     bottom: 0;
