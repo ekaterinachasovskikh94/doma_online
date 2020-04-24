@@ -264,9 +264,9 @@ p.o-tab__content-text {
 .o-tab__form-holder {
   max-width: 482px;
   // border: 1px solid $main-color;
-  padding: 0px 24px;
+  // padding: 0px 24px;
          @media(max-width: 1000px) {
-          width: 240px;
+          max-width: 240px;
       }
                @media(max-width: 568px) {
           width: auto;

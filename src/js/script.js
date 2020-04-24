@@ -121,16 +121,16 @@ window.onclick = function(event) {
   }
 }
 
-// Военная ипотека
+
 
 // Get the modal
-var modal = document.getElementById("myModalMilitary");
+var modal = document.getElementById("myModalMil");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtnModalMilitary");
+var btn = document.getElementById("myBtnModalMil");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closeMilitary")[0];
+var span = document.getElementsByClassName("closeMil")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -148,7 +148,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 
 
 // Попап с окном формы заказа
@@ -268,24 +267,46 @@ window.onclick = function(event) {
 
 // Военная ипотека
 
-var modalPopupMilitary = document.getElementById("myPopupMilitary");
+var modalPopupMil = document.getElementById("myPopupMil");
 
-var btnPopupMilitary = document.getElementById("myBtnPopupMilitary");
+var btnPopupMil = document.getElementById("myBtnPopupMil");
 
-var span = document.getElementsByClassName("closePopupMilitary")[0];
+var span = document.getElementsByClassName("closePopupMil")[0];
 
-document.getElementById('myBtnPopupMilitary').onclick = function() {
-  modalPopupMilitary.style.display = "block";
+document.getElementById('myBtnPopupMil').onclick = function() {
+  modalPopupMil.style.display = "block";
   modal.style.display = "none";
 }
 
 span.onclick = function() {
-  modalPopupMilitary.style.display = "none";
+  modalPopupMil.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modalPopupMilitary) {
-    modalPopupMilitary.style.display = "none";
+  if (event.target == modalPopupMil) {
+    modalPopupMil.style.display = "none";
+  }
+}
+
+// рефенсирование
+
+var modalPopupContact = document.getElementById("myPopupContact");
+
+var btnPopupContact = document.getElementById("myBtnPopupContact");
+
+var span = document.getElementsByClassName("closePopupContact")[0];
+
+document.getElementById('myBtnPopupContact').onclick = function() {
+  modalPopupRef.style.display = "block";
+}
+
+span.onclick = function() {
+  modalPopupContact.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalPopup) {
+    modalPopupContact.style.display = "none";
   }
 }
 

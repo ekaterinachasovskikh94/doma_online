@@ -50,9 +50,12 @@
 .closePopupGos{
   @include close;
 }
-.closeMilitary {
+.closeMil{
   @include close;
 }
-.closePopupMilitary{
+.closePopupMil{
+  @include close;
+}
+.closePopupContact{
   @include close;
 }
