@@ -669,11 +669,10 @@ p.o-tab__content-text {
       padding-top: 8px; } }
 
 .o-tab__form-holder {
-  max-width: 482px;
-  padding: 0px 24px; }
+  max-width: 482px; }
   @media (max-width: 1000px) {
     .o-tab__form-holder {
-      width: 240px; } }
+      max-width: 240px; } }
   @media (max-width: 568px) {
     .o-tab__form-holder {
       width: auto; } }
@@ -1593,13 +1592,13 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
 
-.closeMilitary {
+.closeMil {
   position: relative;
   left: calc(100% - 56px);
   cursor: pointer;
   background: transparent;
   padding: 8px 16px; }
-  .closeMilitary:before {
+  .closeMil:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1609,7 +1608,7 @@ p.o-footer__description {
     background: #aaaaaa;
     width: 4px;
     height: 36px; }
-  .closeMilitary:after {
+  .closeMil:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1620,13 +1619,13 @@ p.o-footer__description {
     width: 4px;
     height: 36px; }
 
-.closePopupMilitary {
+.closePopupMil {
   position: relative;
   left: calc(100% - 56px);
   cursor: pointer;
   background: transparent;
   padding: 8px 16px; }
-  .closePopupMilitary:before {
+  .closePopupMil:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1636,7 +1635,34 @@ p.o-footer__description {
     background: #aaaaaa;
     width: 4px;
     height: 36px; }
-  .closePopupMilitary:after {
+  .closePopupMil:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+
+.closePopupContact {
+  position: relative;
+  left: calc(100% - 56px);
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 16px; }
+  .closePopupContact:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #aaaaaa;
+    width: 4px;
+    height: 36px; }
+  .closePopupContact:after {
     content: '';
     position: absolute;
     bottom: 0;
