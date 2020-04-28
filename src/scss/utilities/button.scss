@@ -76,4 +76,8 @@ position: relative;
         width: 4px;
     height: 36px;
   }
+               @media(max-width: 568px) {
+          left: calc(100% - 20px);
+
+      }
 }

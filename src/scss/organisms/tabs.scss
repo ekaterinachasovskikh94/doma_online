@@ -258,6 +258,9 @@ p.o-tab__content-text {
       }
              @media(max-width: 568px) {
           padding-top: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
       }
 }
 

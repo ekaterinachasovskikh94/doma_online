@@ -11,8 +11,14 @@
 }
 .o-window__form {
   // padding: 16px 56px 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // max-width: 420px;
   @media(max-width: 568px) {
     // padding: 44px 32px;
+
   }
 }
 

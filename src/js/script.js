@@ -124,13 +124,13 @@ window.onclick = function(event) {
 
 
 // Get the modal
-var modal = document.getElementById("myModalMil");
+var modal = document.getElementById("myModalSub");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtnModalMil");
+var btn = document.getElementById("myBtnModalSub");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closeMil")[0];
+var span = document.getElementsByClassName("closeSub")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -265,30 +265,30 @@ window.onclick = function(event) {
 }
 
 
-// Военная ипотека
+// Субсидированная ипотека
 
-var modalPopupMil = document.getElementById("myPopupMil");
+var modalPopupSub = document.getElementById("myPopupSub");
 
-var btnPopupMil = document.getElementById("myBtnPopupMil");
+var btnPopupSub = document.getElementById("myBtnPopupSub");
 
-var span = document.getElementsByClassName("closePopupMil")[0];
+var span = document.getElementsByClassName("closePopupSub")[0];
 
-document.getElementById('myBtnPopupMil').onclick = function() {
-  modalPopupMil.style.display = "block";
+document.getElementById('myBtnPopupSub').onclick = function() {
+  modalPopupSub.style.display = "block";
   modal.style.display = "none";
 }
 
 span.onclick = function() {
-  modalPopupMil.style.display = "none";
+  modalPopupSub.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modalPopupMil) {
-    modalPopupMil.style.display = "none";
+  if (event.target == modalPopupSub) {
+    modalPopupSub.style.display = "none";
   }
 }
 
-// рефенсирование
+// контакты
 
 var modalPopupContact = document.getElementById("myPopupContact");
 
@@ -297,7 +297,7 @@ var btnPopupContact = document.getElementById("myBtnPopupContact");
 var span = document.getElementsByClassName("closePopupContact")[0];
 
 document.getElementById('myBtnPopupContact').onclick = function() {
-  modalPopupRef.style.display = "block";
+  modalPopupContact.style.display = "block";
 }
 
 span.onclick = function() {
@@ -305,11 +305,32 @@ span.onclick = function() {
 }
 
 window.onclick = function(event) {
-  if (event.target == modalPopup) {
+  if (event.target == modalPopupContact) {
     modalPopupContact.style.display = "none";
   }
 }
 
+// материнский капитал
+
+// var modalPopupContact = document.getElementById("myPopupContact");
+
+// var btnPopupContact = document.getElementById("myBtnPopupContact");
+
+// var span = document.getElementsByClassName("closePopupContact")[0];
+
+// document.getElementById('myBtnPopupContact').onclick = function() {
+//   modalPopupContact.style.display = "block";
+// }
+
+// span.onclick = function() {
+//   modalPopupContact.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+//   if (event.target == modalPopup) {
+//     modalPopupContact.style.display = "none";
+//   }
+// }
 
 // Стилизация select
 
