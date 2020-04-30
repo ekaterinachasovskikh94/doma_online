@@ -23,6 +23,10 @@
   bottom: 14px;
     border: 6px solid transparent;
   border-color: $main-color transparent transparent transparent;
+           @media(max-width: 568px) {
+          bottom: 8px;
+
+      }
 
 }
 
@@ -30,6 +34,10 @@
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent $main-color transparent;
   bottom: 20px;
+         @media(max-width: 568px) {
+          bottom: 8px;
+
+      }
 }
 
 /*style the items (options), including the selected item:*/
@@ -39,6 +47,10 @@
   border: 1px solid $main-color;
   cursor: pointer;
   user-select: none;
+         @media(max-width: 568px) {
+          padding: 8px;
+
+      }
 }
 
 /*style items (options):*/
