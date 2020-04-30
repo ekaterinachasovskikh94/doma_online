@@ -71,6 +71,7 @@ height: 24px;
   max-width: 420px;
                @media(max-width: 768px) {
           margin: 24px 0;
+          max-width: 250px;
 
       }
  }
@@ -107,6 +108,12 @@ input:valid {
     border: 1px solid $main-color;
   }
 }
+
+input.text:focus {
+  border: 2px solid $main-color;
+}
+
+
 input[type=tel] {
      &.o-form__input {
          
@@ -324,6 +331,7 @@ input[type="checkbox"]:checked.o-form__checkbox+label[for="confirmationInfo"] {
     background-color: $white;
     vertical-align: middle;
     margin-right: 16px;
+    margin-top: 6px;
     // right: calc(34% - 4px);
          }
      }
