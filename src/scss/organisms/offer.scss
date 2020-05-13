@@ -4,6 +4,9 @@
   // align-items: center;
   border: 1px solid $main-color;
   padding: 48px 32px;
+           @media(max-width: 568px) {
+padding: 32px 16px;
+  }
 }
 .o-offer__list {
   padding-left: 20px;
@@ -43,9 +46,15 @@ left: -24px;
   @include font-name-cost-lato;
   color: $main-color;
 padding: 64px 0;
+         @media(max-width: 568px) {
+padding: 32px 0;
+  }
 }
 
 .o-offer__info {
   text-align: center;
   @include font-info-lato;
+     @media(max-width: 568px) {
+      @include font-text-lato;
+    }
 }

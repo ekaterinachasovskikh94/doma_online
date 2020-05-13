@@ -65,13 +65,16 @@
        url('../fonts/Lato-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
+
 @mixin font-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1;
 }
-@mixin font-text {
+
+@mixin font-text-bold {
     font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     font-size: 1rem;
     line-height: 1;
 }
@@ -199,6 +202,13 @@ font-size: 1.25rem;
 }
 }
 @mixin font-name-cost-lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+@mixin font-name-lato {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 2rem;

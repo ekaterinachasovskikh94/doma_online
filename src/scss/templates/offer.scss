@@ -1,6 +1,16 @@
 .t-offer {
-  @include grid(16px, 16px, 3, 360px, 0);
+  // @include grid(16px, 16px, 3, 360px, 0);
+  //    @media(max-width: 1090px) {
+  //     @include grid(16px, 16px, 2, 360px, 0);
+  // }
+    @include grid(16px, 16px, 3, 360px, 0);
      @media(max-width: 1090px) {
-      @include grid(16px, 16px, 2, 360px, 0);
+      @include grid(8px, 8px, 2, 360px, 0);
+  }
+       @media(max-width: 730px) {
+      @include grid(8px, 8px, 1, 360px, 0);
+  }
+         @media(max-width: 568px) {
+      @include grid(0px, 16px, 1, 100%, 0);
   }
 }

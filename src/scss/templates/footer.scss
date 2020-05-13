@@ -1,7 +1,11 @@
 .t-footer {
+  margin-bottom: 100px;
   @include container_global;
       @media(max-width: 768px) {
       padding-bottom: 64px;
+    }
+          @media(max-width: 568px) {
+      padding-bottom: 72px;
     }
 }
 

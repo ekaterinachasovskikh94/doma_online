@@ -108,6 +108,8 @@ padding-bottom: 64px;    }
   @include font-text-medium;
   line-height: 1.5;
   padding-bottom: 16px;
+  color: $text-color;
+  text-decoration: none;
   &:last-child {
     padding-bottom: 0;
   }
