@@ -37,7 +37,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "watch": "^1.0.2",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "stylelint": "stylelint ./src/styles/**/*.scss --fix --syntax scss",
