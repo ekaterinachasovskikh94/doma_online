@@ -6,7 +6,7 @@
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "autoprefixer": "^9.7.4",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.3.0",
     "del": "^5.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -17,7 +17,7 @@
     "path": "^0.12.7",
     "slick-carousel": "^1.8.1",
     "vendor-copy": "^2.0.0",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^7.0.0"
   },
   "author": "ekaterinachasovskikh94",
   "license": "ISC",
@@ -36,8 +36,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "watch": "^1.0.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "stylelint": "stylelint ./src/styles/**/*.scss --fix --syntax scss",
